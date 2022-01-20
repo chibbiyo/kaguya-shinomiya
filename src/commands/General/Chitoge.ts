@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
-				caption: `🌟 *Texαs* 🌟\n\n🍀 *Description: A WhatsApp Bot With Rich Anime Features.\n`,
+				caption: `🌟 *Texαs* 🌟\n\n🍀 *Description*: A WhatsApp Bot With Rich Anime Features.\n`,
 			}
 		);
 	};
