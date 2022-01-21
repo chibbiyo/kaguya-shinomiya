@@ -43,7 +43,7 @@ export default class Command extends BaseCommand {
 					categories[info.config.category].push(info);
 				}
 			}
-			let text = ` *Yes*, *What can I Do*! *@${
+			let text = ` *Yes*, *What can I Do*! \n Hello!*@${
 				user.split("@")[0]
 			}*, I'm Texαs.\n\nMy prefix is - " *${
 				this.client.config.prefix
@@ -54,7 +54,7 @@ export default class Command extends BaseCommand {
 					key
 				)}* \n❐ \`\`\`${categories[key]
 					.map((command) => command.config?.command)
-					.join(',')}\`\`\`\n\n`;
+					.join(', ')}\`\`\`\n\n`;
 			return void this.client.sendMessage(
 				M.from,
 				{ url: chitoge },
