@@ -19,14 +19,14 @@ export default class Command extends BaseCommand {
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
 		const chitoge =
-			"https://telegra.ph/file/1c0170c930d5ab65bbcad.mp4";
+			"https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg";
 		return void this.client.sendMessage(
 			M.from,
 			{ url: chitoge },
 			MessageType.video,
 			{
 				quoted: M.WAMessage,
-				mimetype: Mimetype.image,
+				mimetype: Mimetype.gif,
 				caption: `*A WhatsApp Assistant*\n\nWhich can be use as a group management bot in whatsapp. \nIt have much features send the command *${this.client.config.prefix}help* to know them.\nThis Assistant created with ❤ By Alι_Aryαɴ. \n`,
 			}
 		);
