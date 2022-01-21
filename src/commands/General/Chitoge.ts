@@ -9,7 +9,7 @@ import { ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "chitoge",
+			command: "texas",
 			description: "Displays the info",
 			category: "general",
 			usage: `${client.config.prefix}chitoge`,
@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
 		const chitoge =
-			"https://telegra.ph/file/bcfbfd28a0088784588ef.jpg";
+			"https://telegra.ph/file/7b2e3b0e08229c111311f.mp4";
 		return void this.client.sendMessage(
 			M.from,
 			{ url: chitoge },
@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
-				caption: `🌟 *Texαs* 🌟\n\n🍀 *Description*: A WhatsApp Bot With Rich Anime Features.\n`,
+				caption: ` *Texαs Assistant* 🌟 \n\n *Description*: A WhatsApp Personal Assistant With Rich Anime Features. Thanks To  Alι_Aryαɴ\n`,
 			}
 		);
 	};
