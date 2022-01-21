@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
 	): Promise<void> => {
 		const user = M.sender.jid;
 		const chitoge =
-			"https://telegra.ph/file/7b2e3b0e08229c111311f.mp4";
+			"https://media.tenor.com/videos/571d88ea5d66e7b95cdbc4ef6029dd95/mp4";
 		if (!parsedArgs.joined) {
 			const commands = this.handler.commands.keys();
 			const categories: { [key: string]: ICommand[] } = {};
@@ -43,16 +43,16 @@ export default class Command extends BaseCommand {
 					categories[info.config.category].push(info);
 				}
 			}
-			let text = `Yes, What can I do! *@${
+			let text = `👋🏻 (💙ω💙) Konichiwa! *@${
 				user.split("@")[0]
-			}*, I'm Tex慣s.\n\nMy prefix is - "${
+			}*, I'm Chitoge.\n\nMy prefix is - "${
 				this.client.config.prefix
 			}"\n\nThe usable commands are listed below.\n\n`;
 			const keys = Object.keys(categories);
 			for (const key of keys)
-				text += `*�곣봺�곣씛 ${this.client.util.capitalize(
+				text += `*${this.client.util.capitalize(
 					key
-				)} �기봺�곣봺*\n�� \`\`\`${categories[key]
+				)} *\n❐ \`\`\`${categories[key]
 					.map((command) => command.config?.command)
 					.join(" \n ")}\`\`\`\n\n`;
 			return void this.client.sendMessage(
@@ -62,7 +62,7 @@ export default class Command extends BaseCommand {
 				{
 					quoted: M.WAMessage,
 					mimetype: Mimetype.gif,
-					caption: `${text} �뱷 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`,
+					caption: `${text} 📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`,
 					contextInfo: { mentionedJid: [user] },
 				}
 			);
@@ -75,23 +75,23 @@ export default class Command extends BaseCommand {
 			command: command.config.command,
 		});
 		M.reply(
-			`�� *Command:* ${this.client.util.capitalize(
+			`🚀 *Command:* ${this.client.util.capitalize(
 				command.config?.command
-			)}\n�뱣 *Status:* ${
+			)}\n📉 *Status:* ${
 				state ? "Disabled" : "Available"
-			}\n�� *Category:* ${this.client.util.capitalize(
+			}\n⛩ *Category:* ${this.client.util.capitalize(
 				command.config?.category || ""
 			)}${
 				command.config.aliases
-					? `\n��툘 *Aliases:* ${command.config.aliases
+					? `\n♦️ *Aliases:* ${command.config.aliases
 							.map(this.client.util.capitalize)
 							.join(", ")}`
 					: ""
-			}\n�럯 *Group Only:* ${this.client.util.capitalize(
+			}\n🎐 *Group Only:* ${this.client.util.capitalize(
 				JSON.stringify(!command.config.dm ?? true)
-			)}\n�뭿 *Usage:* ${command.config?.usage || ""}\n\n�뱬 *Description:* ${
+			)}\n💎 *Usage:* ${command.config?.usage || ""}\n\n📒 *Description:* ${
 				command.config?.description || ""
 			}`
 		);
 	};
-    }
+}
