@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
 			MessageType.image,
 			{
 				quoted: M.WAMessage,
-				mimetype: Mimetype.gif,
+				mimetype: Mimetype.jpg,
 				caption: `*A WhatsApp Assistant*\n\nWhich can be use as a group management bot in whatsapp. \nIt have much features send the command *${this.client.config.prefix}help* to know them.\nThis Assistant created with ❤ By Alι_Aryαɴ. \n`,
 			}
 		);
