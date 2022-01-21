@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
 		const chitoge =
-			"https://telegra.ph/file/f472d867cc906efb21747.jpg";
+			"https://telegra.ph/file/7b2e3b0e08229c111311f.mp4";
 		return void this.client.sendMessage(
 			M.from,
 			{ url: chitoge },
@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
-				caption: `I don't have time to have a conversation with someone like you. Use something from *${this.client.config.prefix}help* list if you want anything. \n`,
+				caption: `*A WhatsApp Assistant* \nWhich can be use as a group management.\n It have much features send the command *${this.client.config.prefix}help* to know them.\n This Assistant created with ♥ By Alι_Aryαɴ. \n`,
 			}
 		);
 	};
