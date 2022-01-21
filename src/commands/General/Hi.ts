@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
-				caption: `*A WhatsApp Assistant* \nWhich can be use as a group management.\n It have much features send the command *${this.client.config.prefix}help* to know them.\n This Assistant created with ♥ By Alι_Aryαɴ. \n`,
+				caption: `*A WhatsApp Assistant*\n\n Which can be use as a group management. \nIt have much features send the command *${this.client.config.prefix}help* to know them.\nThis Assistant created with ❤ By Alι_Aryαɴ. \n`,
 			}
 		);
 	};
