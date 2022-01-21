@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
 	): Promise<void> => {
 		const user = M.sender.jid;
 		const chitoge =
-			"https://media.tenor.com/videos/571d88ea5d66e7b95cdbc4ef6029dd95/mp4";
+			"https://telegra.ph/file/7b2e3b0e08229c111311f.mp4";
 		if (!parsedArgs.joined) {
 			const commands = this.handler.commands.keys();
 			const categories: { [key: string]: ICommand[] } = {};
@@ -43,16 +43,16 @@ export default class Command extends BaseCommand {
 					categories[info.config.category].push(info);
 				}
 			}
-			let text = `👋🏻 (💙ω💙) Konichiwa! *@${
+			let text = ' Yes, What can I Do! *@${
 				user.split("@")[0]
-			}*, I'm Chitoge.\n\nMy prefix is - "${
+			}*, I'm Texαs.\n\nMy prefix is - "*${
 				this.client.config.prefix
-			}"\n\nThe usable commands are listed below.\n\n`;
+			}*"\n\nThe usable commands are listed below.\n\n`;
 			const keys = Object.keys(categories);
 			for (const key of keys)
 				text += `*${this.client.util.capitalize(
 					key
-				)} *\n❐ \`\`\`${categories[key]
+				)}* \n❐ \`\`\`${categories[key]
 					.map((command) => command.config?.command)
 					.join(" \n ")}\`\`\`\n\n`;
 			return void this.client.sendMessage(
