@@ -23,10 +23,9 @@ export default class Command extends BaseCommand {
 		return void this.client.sendMessage(
 			M.from,
 			{ url: chitoge },
-			MessageType.video,
+			MessageType.image,
 			{
-				quoted: M.WAMessage,
-				mimetype: Mimetype.gif,
+				
 				caption: `*A WhatsApp Assistant*\n\nWhich can be use as a group management bot in whatsapp. \nIt have much features send the command *${this.client.config.prefix}help* to know them.\nThis Assistant created with ❤ By Alι_Aryαɴ. \n`,
 			}
 		);
