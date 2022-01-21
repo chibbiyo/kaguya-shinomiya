@@ -38,7 +38,7 @@ export default class Command extends BaseCommand {
             let text = `👋🏻 (❤ω❤) Konichiwa! *${M.sender.username}*\n\n•Support me by subscribing My youtube channel⬇️\nhttps://youtube.com/channel/UCIA_gt6ns4hu6k-WQOPRoNQ\n\n━━❰･Notes📮Side･❱━━\n*Read the rules*\n\nMy name is Cara\n\nMy prefix is !\n\n1 | *Don't Call* Bots to avoid Blocking.\n\n2 | *Don't Spam* in Groups&Pm to avoid Blocking\n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
-                text += `━━❰•Bot ${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}•❱━━\n• \`\`\`${categories[
+                text += `*${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}*\n• \`\`\`${categories[
                     key
                 ]
                     .map((command) => command.config?.command)
@@ -66,5 +66,5 @@ export default class Command extends BaseCommand {
         )
     }
 
-    emojis = ['📺', '🤖', '⚙️','✡', '💐', '🌸', '🕹', '🎍', '👑', '🎌', '🚏', '🇯🇵']
+    emojis = ['💡','🏮','💻','🎐','🎍','🎮','🛡','🎵','🥇🔩','🍀','📚']
 }
