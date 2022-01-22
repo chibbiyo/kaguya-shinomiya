@@ -30,6 +30,12 @@ export default class Command extends BaseCommand {
 				const info = this.handler.commands.get(command);
 				if (!command) continue;
 				if (!info?.config?.category || info.config.category === "dev") continue;
+                                if (
+					!info?.config?.category ||
+					(info.config.category === "nsfw" &&
+						!(await this.client.getGroupData(M.from)).nsfw)
+				)
+					continue;
 				if (Object.keys(categories).includes(info.config.category))
 					categories[info.config.category].push(info);
 				else {
@@ -37,11 +43,11 @@ export default class Command extends BaseCommand {
 					categories[info.config.category].push(info);
 				}
 			}
-			let text = ` *Yes*, I'm *Texas* \n*What can I do for you*! \nGroup Member! *@${
+			let text = ` *Yes?* \n*What can I do for you*! \nGroup Member! *@${
 				user.split("@")[0]
-			}*,\n💡 *Prefix:* " *${
+			}*,\n\n💡 *Prefix:* " *${
 				this.client.config.prefix
-			}* "\n\nThe usable commands are listed below.\n\n`;
+			}* "\n\n`;
 			const keys = Object.keys(categories);
 			for (const key of keys)
 				text += `*${this.client.util.capitalize(
