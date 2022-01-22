@@ -43,9 +43,9 @@ export default class Command extends BaseCommand {
 					categories[info.config.category].push(info);
 				}
 			}
-			let text = ` *Yes*, *What can I do for you*! \n Member! *@${
+			let text = ` *Yes*, I'm *Texas* \n*What can I do for you*! \nGroup Member! *@${
 				user.split("@")[0]
-			}*, I'm Texαs.\n\nMy prefix is - " *${
+			}*,\n\nMy prefix is - " *${
 				this.client.config.prefix
 			}* "\n\nThe usable commands are listed below.\n\n`;
 			const keys = Object.keys(categories);
@@ -62,7 +62,7 @@ export default class Command extends BaseCommand {
 				{
 					quoted: M.WAMessage,
 					mimetype: Mimetype.gif,
-					caption: `${text} 📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`,
+					caption: `${text} 📚 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`,
 					contextInfo: { mentionedJid: [user] },
 				}
 			);
@@ -75,21 +75,21 @@ export default class Command extends BaseCommand {
 			command: command.config.command,
 		});
 		M.reply(
-			`🚀 *Command:* ${this.client.util.capitalize(
+			`❗ *Command:* ${this.client.util.capitalize(
 				command.config?.command
-			)}\n📉 *Status:* ${
+			)}\n📊 *Status:* ${
 				state ? "Disabled" : "Available"
-			}\n⛩ *Category:* ${this.client.util.capitalize(
+			}\n🧩 *Category:* ${this.client.util.capitalize(
 				command.config?.category || ""
 			)}${
 				command.config.aliases
-					? `\n♦️ *Aliases:* ${command.config.aliases
+					? `\n🎱 *Aliases:* ${command.config.aliases
 							.map(this.client.util.capitalize)
 							.join(", ")}`
 					: ""
-			}\n🎐 *Group Only:* ${this.client.util.capitalize(
+			}\n💬 *Group Only:* ${this.client.util.capitalize(
 				JSON.stringify(!command.config.dm ?? true)
-			)}\n💎 *Usage:* ${command.config?.usage || ""}\n\n📒 *Description:* ${
+			)}\n🛠️ *Usage:* ${command.config?.usage || ""}\n\n📚 *Description:* ${
 				command.config?.description || ""
 			}`
 		);
