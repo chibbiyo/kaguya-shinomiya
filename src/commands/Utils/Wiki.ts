@@ -28,10 +28,10 @@ export default class Command extends BaseCommand {
 			return void (await M.reply("Invalid wikipedia page, Baka!"));
 		const wiki = result as IWiki;
 		let text = "";
-		text += `*🎀 Title: ${wiki.title}*\n\n`;
-		text += `*📜 Description: ${wiki.description}*\n\n`;
+		text += `*🔍 Title: ${wiki.title}*\n\n`;
+		text += `*📖 Description: ${wiki.description}*\n\n`;
 		text += `*🌐 URL: ${wiki.content_urls.desktop.page}*\n\n`;
-		text += `*❄ Summary:* ${wiki.extract}`;
+		text += `*📕 Summary:* ${wiki.extract}`;
 		await M.reply(text);
 	};
 }
