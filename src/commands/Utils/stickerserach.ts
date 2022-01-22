@@ -36,7 +36,7 @@ const b = `${data.results?.[Math.floor(Math.random() * data.results.length)]?.me
 			author: "BY Texαs ✨",
 			quality: 90,
 			type: "crop",
-			categories: ["🎃"],
+			categories: ["🎊"],
 		});
 
       await M.reply(
