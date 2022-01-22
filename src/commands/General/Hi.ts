@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
 			MessageType.image,
 			{
 				
-				caption: `*I'm Texas*\n\nAn WhatsApp group management bot in whatsapp. \nIt have much features send the command *${this.client.config.prefix}help* to know them.\nThis management bot created with ❤ By Alι_Aryαɴ. \n`,
+				caption: `*I'm Texas*\n\nAn WhatsApp group management bot. \nI have much features send the command *${this.client.config.prefix}help* to know them.\nThis bot created with ❤ By Alι_.\n`,
 			}
 		);
 	};
