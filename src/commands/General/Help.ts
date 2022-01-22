@@ -45,7 +45,7 @@ export default class Command extends BaseCommand {
 			}
 			let text = ` *Yes*, I'm *Texas* \n*What can I do for you*! \nGroup Member! *@${
 				user.split("@")[0]
-			}*,\n\nMy prefix is - " *${
+			}*,\n💡 *Prefix:* " *${
 				this.client.config.prefix
 			}* "\n\nThe usable commands are listed below.\n\n`;
 			const keys = Object.keys(categories);
@@ -62,7 +62,7 @@ export default class Command extends BaseCommand {
 				{
 					quoted: M.WAMessage,
 					mimetype: Mimetype.gif,
-					caption: `${text} 📚 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`,
+					caption: `${text} 📚 Use ${this.client.config.prefix}help <command_name> to view the full info.\n\n🔖 Eg:/help waifu`,
 					contextInfo: { mentionedJid: [user] },
 				}
 			);
