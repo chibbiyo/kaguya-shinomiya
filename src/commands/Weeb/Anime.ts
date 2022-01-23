@@ -50,11 +50,11 @@ export default class Command extends BaseCommand {
 			});
 		let text = "";
 		const result = anime.data[0].node;
-		text += `🎀 *Title: ${result.title}*\n`;
-		text += `🎋 *Format: ${result.media_type.toUpperCase()}*\n`;
-		text += `📈 *Status: ${result.status.toUpperCase().replace(/\_/g, " ")}*\n`;
-		text += `🍥 *Total episodes: ${result.num_episodes}*\n`;
-		text += `🧧 *Genres:*\n`;
+		text += `🔍 *Title: ${result.title}*\n`;
+		text += `⚡ *Format: ${result.media_type.toUpperCase()}*\n`;
+		text += `📊 *Status: ${result.status.toUpperCase().replace(/\_/g, " ")}*\n`;
+		text += `🧊 *Total episodes: ${result.num_episodes}*\n`;
+		text += `🎬 *Genres:*\n`;
 		for (let i = 0; i < result.genres.length; i++) {
 			text += `*${result.genres[i].name}*\n`;
 		}
@@ -68,7 +68,7 @@ export default class Command extends BaseCommand {
 		text += `🎐 *Popularity:* ${result.popularity}*\n`;
 		text += `🏅 *Rank: ${result.rank}*\n\n`;
 		text += `🌐 *URL: https://myanimelist.net/anime/${result.id}*\n\n`;
-		text += `❄ *Description:* ${result.synopsis.replace(
+		text += `🀄 *Description:* ${result.synopsis.replace(
 			/\[Written by MAL Rewrite]/g,
 			""
 		)}`;
