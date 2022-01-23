@@ -31,15 +31,13 @@ export default class Command extends BaseCommand {
 			const secs = Math.floor(seconds % 60);
 			return `${pad(hours)}:${pad(minutes)}:${pad(secs)}`;
 		};
+                const g = "https://telegra.ph/file/1dbbbf0fd8ec56713d51c.jpg"
 		const uptime = () => formatTime(process.uptime());
-                        await chitoge =
-			"https://telegra.ph/file/1dbbbf0fd8ec56713d51c.jpg";
-		return void this.client.sendMessage(
+		       return void this.client.sendMessage(
 			M.from,
-			{ url: chitoge },
+			{ url: g },
 			MessageType.image,
 			{
-				
 				caption:`*╭─* \n*│Name: Texαs* ✨\n*│ℙ𝕣𝕖𝕗𝕚𝕩:* *${this.client.config.prefix}*\n*│Uptime: ${uptime()}*\n*│Total Groups: ${chats.length}*\n*│Owner: Alι_Aryαɴ*\n*╰────────────*\n`
 		);
 	};
