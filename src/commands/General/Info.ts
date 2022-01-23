@@ -32,9 +32,15 @@ export default class Command extends BaseCommand {
 			return `${pad(hours)}:${pad(minutes)}:${pad(secs)}`;
 		};
 		const uptime = () => formatTime(process.uptime());
-		await M.reply(
-			`*╭─* \n*│Name: Texαs* ✨\n*│ℙ𝕣𝕖𝕗𝕚𝕩:* *${this.client.config.prefix}*\n*│Uptime: ${uptime()}*\n*│Total Groups: ${chats.length}*\n*│Owner: Alι_Aryαɴ*\n
-*╰────────────*\n`
+                const chitoge =
+			"https://telegra.ph/file/1dbbbf0fd8ec56713d51c.jpg";
+		return void this.client.sendMessage(
+			M.from,
+			{ url: chitoge },
+			MessageType.image,
+			{
+				
+				caption:`*╭─* \n*│Name: Texαs* ✨\n*│ℙ𝕣𝕖𝕗𝕚𝕩:* *${this.client.config.prefix}*\n*│Uptime: ${uptime()}*\n*│Total Groups: ${chats.length}*\n*│Owner: Alι_Aryαɴ*\n*╰────────────*\n`
 		);
 	};
 }
