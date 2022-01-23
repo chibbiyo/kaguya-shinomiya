@@ -111,11 +111,11 @@ export default class Command extends BaseCommand {
 			.setStatus("online", false)
 			.setLevel(level, "Level:", true)
 			.setRank(0, `Role: ${role}`, true)
-			.setProgressBar("#e68e15", "COLOR")
-			.setOverlay("#000000")
+			.setProgressBar("#7FFD4", "COLOR")
+			.setOverlay("#36454F")
 			.setUsername(username)
 			.setDiscriminator("0007")
-			.setBackground("COLOR", "#FFC0CB");
+			.setBackground("COLOR", "#000000");
 		rank.build({}).then((rankcard) => {
 			const text = `🏮 *Username: ${username}*\n\n〽️ *Level: ${level}*\n\n⭐ *Exp: ${
 				exp || 0
