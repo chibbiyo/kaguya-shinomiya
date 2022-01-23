@@ -32,7 +32,7 @@ export default class Command extends BaseCommand {
 			return `${pad(hours)}:${pad(minutes)}:${pad(secs)}`;
 		};
 		const uptime = () => formatTime(process.uptime());
-                        chitoge =
+                        await chitoge =
 			"https://telegra.ph/file/1dbbbf0fd8ec56713d51c.jpg";
 		return void this.client.sendMessage(
 			M.from,
