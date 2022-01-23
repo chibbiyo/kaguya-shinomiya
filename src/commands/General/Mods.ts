@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
             (user, index) =>
                 (text += `#${index + 1}\n👨‍💻 *Username: ${
                     user.notify || user.vname || user.name || 'null'
-                }*\n *Contact info Is hidden by Owner!*\n\n`)
+                }*\n*Contact Info [Hidden by Alι_]*\n\n`)
         )
         text += `\n*Texαs* ✨`
         return void M.reply(text)
