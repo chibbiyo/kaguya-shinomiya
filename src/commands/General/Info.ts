@@ -17,8 +17,6 @@ export default class Command extends BaseCommand {
 	}
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
-              const chitoge =
-			"https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg";
 		/*eslint-disable @typescript-eslint/no-explicit-any*/
 		const chats: any = this.client.chats
 			.all()
@@ -33,6 +31,8 @@ export default class Command extends BaseCommand {
 			const secs = Math.floor(seconds % 60);
 			return `${pad(hours)}:${pad(minutes)}:${pad(secs)}`;
 		};
+                const chitoge =
+			"https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg";
 		const uptime = () => formatTime(process.uptime());
 		return void this.client.sendMessage(
 			M.from,
@@ -40,6 +40,6 @@ export default class Command extends BaseCommand {
 			MessageType.image,
 			{
 				caption: `*╭─* \n*│Name: Texαs* ✨\n*│ℙ𝕣𝕖𝕗𝕚𝕩:* *${this.client.config.prefix}*\n*│Uptime: ${uptime()}*\n*│Total Groups: ${chats.length}*\n*│Owner: Alι_Aryαɴ*\n*╰────────────*\n`
-		        }
-           )
+		        })
+           };
 }
