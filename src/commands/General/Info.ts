@@ -4,6 +4,7 @@ import MessageHandler from "../../Handlers/MessageHandler";
 import BaseCommand from "../../lib/BaseCommand";
 import WAClient from "../../lib/WAClient";
 import { ISimplifiedMessage } from "../../typings";
+import { MessageType } from "@adiwajshing/baileys";
 
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
@@ -31,12 +32,12 @@ export default class Command extends BaseCommand {
 			const secs = Math.floor(seconds % 60);
 			return `${pad(hours)}:${pad(minutes)}:${pad(secs)}`;
 		};
-                const chitoge =
+                const texas =
 			"https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg";
 		const uptime = () => formatTime(process.uptime());
 		return void this.client.sendMessage(
 			M.from,
-			{ url: chitoge },
+			{ url: texas },
 			MessageType.image,
 			{
 				caption: `*╭─* \n*│Name: Texαs* ✨\n*│ℙ𝕣𝕖𝕗𝕚𝕩:* *${this.client.config.prefix}*\n*│Uptime: ${uptime()}*\n*│Total Groups: ${chats.length}*\n*│Owner: Alι_Aryαɴ*\n*╰────────────*\n`
