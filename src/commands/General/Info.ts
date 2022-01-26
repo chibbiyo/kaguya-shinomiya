@@ -41,6 +41,5 @@ export default class Command extends BaseCommand {
 			{
 				caption: `*╭─* \n*│Name: Texαs* ✨\n*│ℙ𝕣𝕖𝕗𝕚𝕩:* *${this.client.config.prefix}*\n*│Uptime: ${uptime()}*\n*│Total Groups: ${chats.length}*\n*│Owner: Alι_Aryαɴ*\n*╰────────────*\n`
 		        }
-		)
-	}
+           )
 }
