@@ -16,6 +16,7 @@ export default class Command extends BaseCommand {
        await M.reply(
 			`*Do you mean* *${this.client.config.prefix}help*? \n`
      )
+   }
 }
 
           
