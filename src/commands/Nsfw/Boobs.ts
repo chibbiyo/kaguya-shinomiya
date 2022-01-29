@@ -11,7 +11,7 @@ export default class Command extends BaseCommand {
 			description: `Know it yourself.`,
 			aliases: ["bb"],
 			category: "nsfw",
-			usage: `${client.config.prefix}anal`,
+			usage: `${client.config.prefix}boobs`,
 			baseXp: 50,
 		});
 	}
