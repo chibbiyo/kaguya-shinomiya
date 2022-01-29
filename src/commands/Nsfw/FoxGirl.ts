@@ -13,7 +13,7 @@ export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
 			command: "foxgirl",
-			description: `Will send you random pussy image.`,
+			description: `Will send you random fox girl image.`,
 			aliases: ["fg"],
 			category: "nsfw",
 			usage: `${client.config.prefix}foxgirl`,
