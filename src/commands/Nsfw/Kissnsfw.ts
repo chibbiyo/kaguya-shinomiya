@@ -7,11 +7,11 @@ import { MessageType, Mimetype } from "@adiwajshing/baileys";
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "kissnsfw",
-			description: `Know it yourself.`,
-			aliases: ["kissn"],
+			command: "kissgif",
+			description: `Send you random kissing gif.`,
+			aliases: ["kissgif"],
 			category: "nsfw",
-			usage: `${client.config.prefix}kiss`,
+			usage: `${client.config.prefix}kissgif`,
 			baseXp: 50,
 		});
 	}
