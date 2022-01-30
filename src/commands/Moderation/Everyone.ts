@@ -25,9 +25,9 @@ export default class Command extends BaseCommand {
 		{ joined }: IParsedArgs
 	): Promise<void> => {
 		const stickers = [
-			"https://telegra.ph/file/b598703136303565f762a.jpg",
-                        "https://telegra.ph/file/e14a8f7ccef8f702c386f.jpg",
-			"https://telegra.ph/file/71562ca01ba6f2572aaab.jpg",
+			"https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg",
+                        "https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg",
+			"https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg",
                         "https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg",
 		];
 		const random = stickers[Math.floor(Math.random() * stickers.length)];
