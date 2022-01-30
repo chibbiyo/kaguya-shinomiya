@@ -1,11 +1,25 @@
 import { MessageType } from '@adiwajshing/baileys'
-import fs from 'fs'
-import path from 'path'
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+import MessageHandler from '../../Handlers/MessageHandler'
+import BaseCommand from '../../lib/BaseCommand'
+import WAClient from '../../lib/WAClient'
 const { google } = require('googleapis')
 import { term } from '../utils/functions'
 import mime from 'mime-types'
 import i18n from 'i18n'
+import fs from 'fs'
+import path from 'path'
+
+export default class Command extends BaseCommand {
+    constructor(client: WAClient, handler: MessageHandler) {
+        super(client, handler, {
+            command: 'gdrive',
+            description: 'Download Google drive items and upload to WhatsApp',
+            category: 'media',
+            aliases: ['download'],
+            usage: `${client.config.prefix}gdrive [link]`,
+            baseXp: 30
+        })
+    }
 
 module.exports = {
     name: 'gdrive',
