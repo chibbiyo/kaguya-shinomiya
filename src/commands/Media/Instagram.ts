@@ -37,7 +37,7 @@ switch (data.result.type) {
         MessageType.image,
                     undefined,
                     undefined,
-                    `*Username*: ${data.result.username}\n *Likes*: ${data.result.like_count}\n🗯 *Comments_count*: ${data.result.comment_count}\n *Cpation*: ${data.result.caption} `,
+                    `✨ *Username*: ${data.result.username}\n👍 *Likes*: ${data.result.like_count}\n🗯💬 *Comments Count*: ${data.result.comment_count}\n🔍 *Cpation*: ${data.result.caption} `,
                     undefined
                 )
     break
@@ -46,7 +46,7 @@ switch (data.result.type) {
        MessageType.video,
                     undefined,
                     undefined,
-                    `*Username*: ${data.result.username}\n🗜 *Duration*: ${data.result.duration}\n *Likes*: ${data.result.like_count}\n🗯 *Comments_count*: ${data.result.comment_count}\n *Cpation*: ${data.result.caption} `,
+                    `✨*Username*: ${data.result.username}\n⏳ *Duration*: ${data.result.duration}\n👍 *Likes*: ${data.result.like_count}\n💬 *Comments Count*: ${data.result.comment_count}\n🔍 *Cpation*: ${data.result.caption} `,
                     undefined
                 )
     break
@@ -55,7 +55,7 @@ switch (data.result.type) {
         MessageType.image,
                     undefined,
                     undefined,
-                    `*Username*: ${data.result.username}\n *Likes*: ${data.result.like_count}\n🗯 *Comments_count*: ${data.result.comment_count}\n *Cpation*: ${data.result.caption} `,
+                    `✨*Username*: ${data.result.username}\n👍 *Likes*: ${data.result.like_count}\n💬 *Comments Count*: ${data.result.comment_count}\n🔍 *Cpation*: ${data.result.caption} `,
                     undefined
                 )
 }
