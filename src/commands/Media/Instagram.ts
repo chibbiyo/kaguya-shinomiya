@@ -11,7 +11,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'instagram',
             aliases: ['insta', 'ig'],
-            description: 'Download the post/video from Instagram',
+            description: 'Download the image or video from Instagram',
             category: 'media',
             dm: true,
             usage: `${client.config.prefix}instagram [link]`
@@ -46,7 +46,7 @@ switch (data.result.type) {
        MessageType.video,
                     undefined,
                     undefined,
-                    `✨*Username*: ${data.result.username}\n⏳ *Duration*: ${data.result.duration}\n👍 *Likes*: ${data.result.like_count}\n💬 *Comments Count*: ${data.result.comment_count}\n🔍 *Cpation*: ${data.result.caption} `,
+                    `✨ *Username*: ${data.result.username}\n⏳ *Duration*: ${data.result.duration}\n👍 *Likes*: ${data.result.like_count}\n💬 *Comments Count*: ${data.result.comment_count}\n🔍 *Cpation*: ${data.result.caption} `,
                     undefined
                 )
     break
@@ -55,7 +55,7 @@ switch (data.result.type) {
         MessageType.image,
                     undefined,
                     undefined,
-                    `✨*Username*: ${data.result.username}\n👍 *Likes*: ${data.result.like_count}\n💬 *Comments Count*: ${data.result.comment_count}\n🔍 *Cpation*: ${data.result.caption} `,
+                    `✨ *Username*: ${data.result.username}\n👍 *Likes*: ${data.result.like_count}\n💬 *Comments Count*: ${data.result.comment_count}\n🔍 *Cpation*: ${data.result.caption} `,
                     undefined
                 )
 }
