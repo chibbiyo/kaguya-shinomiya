@@ -13,7 +13,7 @@ export default class Command extends BaseCommand {
             command: 'reddit',
             description: 'Will send you images from reddit',
             aliases: ['red'],
-            category: 'Utils',
+            category: 'utils',
             usage: `${client.config.prefix}reddit`
         })
     }
