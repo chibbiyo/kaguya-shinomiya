@@ -10,11 +10,11 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'instagram',
-            aliases: ['inta', 'ig'],
-            description: 'Download the post/video from ig ',
+            aliases: ['insta', 'ig'],
+            description: 'Download the post/video from Instagram',
             category: 'media',
             dm: true,
-            usage: `${client.config.prefix}igdl [link]`
+            usage: `${client.config.prefix}instagram [link]`
         })
     }
     // static count = 0
