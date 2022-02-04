@@ -21,7 +21,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         // fetch result of https://waifu.pics/api/sfw/waifu from the API using axios
-        const { data } = await axios.get('https://waifu.pics/api/sfw/waifu')
+        const { data } = await axios.get('https://hanzz-web.herokuapp.com/api/randomimage/waifu')
         const buffer = await request.buffer(data.url).catch((e) => {
             return void M.reply(e.message)
         })
@@ -32,7 +32,7 @@ export default class Command extends BaseCommand {
                     MessageType.image,
                     undefined,
                     undefined,
-                    `*🌟 Here you go.*\n`,
+                    `*✨ Here you go.*\n`,
                     undefined
                 ).catch((e) => {
                     console.log(`This Error occurs when an image is sent via M.reply()\n Child Catch Block : \n${e}`)
