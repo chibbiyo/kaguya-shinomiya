@@ -10,8 +10,8 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'twitter',
-            aliases: ['tw'],
-            description: 'Download post from Twitter',
+            aliases: ['tw', 'tt'],
+            description: 'Download the image or video from Twitter',
             category: 'media',
             dm: true,
             usage: `${client.config.prefix}twitter [link]`
@@ -24,31 +24,40 @@ export default class Command extends BaseCommand {
         const chitoge = joined.trim()
         console.log(chitoge)
         const { data } = await axios.get(`https://hanzz-web.herokuapp.com/api/twitter?url=${chitoge}`)
-        if ((data as { error: string }).error) return void (await M.reply('Sorry, couldn\'t find'))
-        const buffer = await request.buffer(data.result[0].url).catch((e) => {
-            return void M.reply(e.message)
-        })
-        while (true) {
-            try {
-                M.reply(
-                    buffer || '✨ An error occurred. Please try again later',
-                    MessageType.video,
+        if (!data) return void M.reply( await request.buffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEIJBLGeoanLhbUyzTNXLXXRPUDjUuDKIS8g&usqp=CAU`),
+        MessageType.image,
                     undefined,
                     undefined,
-                    `🎃 *Result: ${chitoge} has been found*\n`,
+                    `*Sorry, couldn\'t find or got some errors*`,
                     undefined
-                ).catch((e) => {
-                    console.log(`This error occurs when an image is sent via M.reply()\n Child Catch Block : \n${e}`)
-                    // console.log('Failed')
-                    M.reply(`✨ An error occurred. Please try again later.`)
-                })
-                break
-            } catch (e) {
-                // console.log('Failed2')
-                M.reply(`An error occurred. Please try again later.`)
-                console.log(`This error occurs when an image is sent via M.reply()\n Parent Catch Block : \n${e}`)
-            }
-        }
-        return void null
+                )
+switch (data.result.type) {
+  case 'image':
+    M.reply( await request.buffer(data.result.url),
+        MessageType.image,
+                    undefined,
+                    undefined,
+                    `✨ *Username*: ${data.result.username}\n👍 *Likes*: ${data.result.like_count}\n🗯💬 *Comments Count*: ${data.result.comment_count}\n🔍 *Cpation*: ${data.result.caption} `,
+                    undefined
+                )
+    break
+  case 'video':
+    M.reply( await request.buffer(data.result.url),
+       MessageType.video,
+                    undefined,
+                    undefined,
+                    `✨ *Username*: ${data.result.username}\n⏳ *Duration*: ${data.result.duration}\n👍 *Likes*: ${data.result.like_count}\n💬 *Comments Count*: ${data.result.comment_count}\n🔍 *Cpation*: ${data.result.caption} `,
+                    undefined
+                )
+    break
+  default:
+    M.reply( await request.buffer(data.result.result_url[0].url),
+        MessageType.image,
+                    undefined,
+                    undefined,
+                    `✨ *Username*: ${data.result.username}\n👍 *Likes*: ${data.result.like_count}\n💬 *Comments Count*: ${data.result.comment_count}\n🔍 *Cpation*: ${data.result.caption} `,
+                    undefined
+                )
+}
     }
 }
