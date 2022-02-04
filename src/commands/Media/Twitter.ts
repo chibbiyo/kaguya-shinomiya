@@ -37,7 +37,7 @@ switch (data.result.type) {
         MessageType.image,
                     undefined,
                     undefined,
-                    `✨ *Username*: ${data.result.username}\n👍 *Likes*: ${data.result.like_count}\n🗯💬 *Comments Count*: ${data.result.comment_count}\n🔍 *Cpation*: ${data.result.caption} `,
+                    `✨ Here you go`,
                     undefined
                 )
     break
@@ -46,16 +46,16 @@ switch (data.result.type) {
        MessageType.video,
                     undefined,
                     undefined,
-                    `✨ *Username*: ${data.result.username}\n⏳ *Duration*: ${data.result.duration}\n👍 *Likes*: ${data.result.like_count}\n💬 *Comments Count*: ${data.result.comment_count}\n🔍 *Cpation*: ${data.result.caption} `,
+                    `✨ Here you go`,
                     undefined
                 )
     break
-  default:
+  case 'HD':
     M.reply( await request.buffer(data.result.result_url[0].url),
         MessageType.image,
                     undefined,
                     undefined,
-                    `✨ *Username*: ${data.result.username}\n👍 *Likes*: ${data.result.like_count}\n💬 *Comments Count*: ${data.result.comment_count}\n🔍 *Cpation*: ${data.result.caption} `,
+                    `✨ Here you go`,
                     undefined
                 )
 }
