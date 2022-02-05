@@ -48,11 +48,11 @@ export default class Command extends BaseCommand {
         })
         // choose a random gif from the array
         const gifLink = ship[Math.floor(Math.random() * ship.length)].gifLink
-        let caption = `\t❣️ *Matchmaking...* ❣️ \n`
-        caption += `\t\t---------------------------------\n`
+        let caption = `❤️ *A Perfect Match* ❤️\n`
+        caption += `━━━━━━━━━━━━━\n`
         caption += `@${user1.split('@')[0]}  x  @${user2.split('@')[0]}\n`
-        caption += `\t\t---------------------------------\n`
-        caption += `${sentence}`
+        caption += `━━━━━━━━━━━━━\n`
+        caption += `_${sentence}_`
 
         return void M.reply(
             await this.client.util.GIFBufferToVideoBuffer(await this.client.getBuffer(gifLink)),
