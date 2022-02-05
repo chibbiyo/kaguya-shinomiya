@@ -51,8 +51,8 @@ export default class Command extends BaseCommand {
         let caption = `❤️ *A Perfect Match* ❤️\n`
         caption += `━━━━━━━━━━━━━\n`
         caption += `@${user1.split('@')[0]}  x  @${user2.split('@')[0]}\n`
-        caption += `━━━━━━━━━━━━━\n`
-        caption += `_${sentence}_`
+        caption += `━━━━━━━━━━━━━\n\n`
+        caption += `${sentence}`
 
         return void M.reply(
             await this.client.util.GIFBufferToVideoBuffer(await this.client.getBuffer(gifLink)),
