@@ -18,7 +18,7 @@ export default class Command extends BaseCommand {
 	}
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
-		const chitoge =
+		const images = [
 			"https://cdn.discordapp.com/attachments/688526480069885997/688542864904683599/AmistaAnime.jpg",
                         "https://cdn.discordapp.com/attachments/688526480069885997/688543620005101605/AmistaAnime.jpg",
                         "https://cdn.discordapp.com/attachments/688526480069885997/688546517102886912/AmistaAnime.jpg",
@@ -29,10 +29,10 @@ export default class Command extends BaseCommand {
                         "https://cdn.discordapp.com/attachments/688526480069885997/688565021038346250/AmistaAnime.jpg",
                         "https://cdn.discordapp.com/attachments/688526480069885997/688566273897922591/AmistaAnime.jpg",
                         "https://cdn.discordapp.com/attachments/688526480069885997/688571436591349780/AmistaAnime.jpg",
-;
+];
 		return void this.client.sendMessage(
 			M.from,
-			{ url: chitoge },
+			{ url: images },
 			MessageType.image,
 			{
 				
