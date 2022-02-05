@@ -20,10 +20,7 @@ export default class Command extends BaseCommand {
 	}
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
-       await M.reply(
-			`*Do you mean ${this.client.config.prefix}help?* \n`
-     )
-		const images = [
+		const chitoge =
 			"https://telegra.ph/file/fb37f93ff7526b155cf5f.jpg",
 			"https://telegra.ph/file/fb37f93ff7526b155cf5f.jpg",
 			"https://telegra.ph/file/fb37f93ff7526b155cf5f.jpg",
@@ -31,5 +28,14 @@ export default class Command extends BaseCommand {
 			"https://telegra.ph/file/b598703136303565f762a.jpg",
 			"https://telegra.ph/file/b598703136303565f762a.jpg",
 		];
-};
+		return void this.client.sendMessage(
+			M.from,
+			{ url: chitoge },
+			MessageType.image,
+			{
+				
+				caption: `Useless try By Alι_.\n`,
+			}
+		);
+	};
 }
