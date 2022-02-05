@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
 			command: "lowaifu",
-			description:" useless try by dev",
+			description: "Local Waifu over 1500 images available",
 			category: "weeb",
 			usage: `${client.config.prefix}lowaifu`,
 			baseXp: 10,
@@ -1612,7 +1612,7 @@ export default class Command extends BaseCommand {
 			MessageType.image,
 			{
 				
-				caption: `Useless feature By Alι_.\n`,
+				caption: `✨ Here you go`,
 			}
 		);
 	};
