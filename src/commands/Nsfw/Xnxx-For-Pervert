@@ -17,41 +17,19 @@ export default class Command extends BaseCommand {
             usage: `${client.config.prefix}xnxx [name]`
         })
     }
-    // static count = 0
-     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
-         if (!(await this.client.getGroupData(M.from)).nsfw)
+  run = async (M: ISimplifiedMessage): Promise<void> => {
+        if (!(await this.client.getGroupData(M.from)).nsfw)
          return void M.reply(
         `Don't be a pervert, Baka! This is not an NSFW group.`
-         );       
-        if (!joined) return void M.reply('Provide the keywords you wanna search, Baka!')
-        const chitoge = joined.trim()
-        console.log(chitoge)
-        const { data } = await axios.get(`https://api.ichikaa.xyz/api/xnxxdl?url=${chitoge}&apikey=jxhcCGrCtIavLMAe6JY8xrwTX`)
-        if ((data as { error: string }).error) return void (await M.reply('Sorry, couldn\'t find'))
-        const buffer = await request.buffer(data.result.url).catch((e) => {
-            return void M.reply(e.message)
-        })
-        while (true) {
-            try {
-                M.reply(
-                    buffer || '✨ An error occurred. Please try again later',
-                    MessageType.video,
+         );
+        // fetch result of https://api-xcoders.xyz/api/search/xvideos?query=moms&apikey=f8YZwl2SD9 from the API using axios
+        return void M.reply( await request.buffer(`https://api-xcoders.xyz/api/search/xvideos?query=moms&apikey=f8YZwl2SD9`),
+        MessageType.video,
                     undefined,
                     undefined,
-                    `*Result: ${data.result.title} has been found*\n`,
+                    `✨ Here you go.\n`,
                     undefined
-                ).catch((e) => {
-                    console.log(`This error occurs when an image is sent via M.reply()\n Child Catch Block : \n${e}`)
-                    // console.log('Failed')
-                    M.reply(`✨ An error occurred. Please try again later.`)
-                })
-                break
-            } catch (e) {
-                // console.log('Failed2')
-                M.reply(`An error occurred. Please try again later.`)
-                console.log(`This error occurs when an image is sent via M.reply()\n Parent Catch Block : \n${e}`)
-            }
-        }
-        return void null
+                ).catch((reason: any) =>
+            M.reply(`✖ An error occurred. Please try again later.`))
     }
 }
