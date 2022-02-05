@@ -11,7 +11,7 @@ export default class Command extends BaseCommand {
 		super(client, handler, {
 			command: "lwaifu",
 			description:
-				"Will make a broadcast for groups where the bot is in. Can be used to make announcements.",
+				"Useless",
 			aliases: ["lw", "lf"],
 			category: "weeb",
 			dm: true,
@@ -19,13 +19,10 @@ export default class Command extends BaseCommand {
 		});
 	}
 
-	run = async (
-		M: ISimplifiedMessage,
-		{ joined }: IParsedArgs
-	): Promise<void> => {
-		if (!joined)
-			return void (await M.reply(`Please provide the Broadcast Message.`));
-		const term = joined.trim();
+	run = async (M: ISimplifiedMessage): Promise<void> => {
+       await M.reply(
+			`*Do you mean ${this.client.config.prefix}help?* \n`
+     )
 		const images = [
 			"https://telegra.ph/file/fb37f93ff7526b155cf5f.jpg",
 			"https://telegra.ph/file/fb37f93ff7526b155cf5f.jpg",
