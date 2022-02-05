@@ -29,8 +29,7 @@ export default class Command extends BaseCommand {
         })
         while (true) {
             try {
-                M.reply(
-                    buffer || 'Could not fetch image. Please try again later',
+                 M.reply( await request.buffer(data.result.url),
                     MessageType.video,
                     undefined,
                     undefined,
