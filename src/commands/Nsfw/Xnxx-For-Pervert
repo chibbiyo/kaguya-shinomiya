@@ -9,12 +9,12 @@ import axios from 'axios'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'xnxx',
-            aliases: ['xxx'],
+            command: 'pervert',
+            aliases: ['per'],
             description: 'Pervert Feature Why',
             category: 'nsfw',
             dm: true,
-            usage: `${client.config.prefix}xnxx`
+            usage: `${client.config.prefix}pervert`
         })
     }
     // static count = 0
