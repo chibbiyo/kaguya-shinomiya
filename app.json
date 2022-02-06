@@ -1,6 +1,6 @@
 {
-  "name": "Cara",
-  "description": "A WhatsApp Bot With Rich Anime Features.",
+  "name": "Chitoge",
+  "description": "A WhatsApp Bot With Rich Anime Features. ",
   "keywords": [
       "bot",
       "whatsapp",
@@ -11,9 +11,9 @@
       "whatsapp-sticker-bot",
       "whatsapp-botto"
   ],
-  "website": "https://github.com/iamherok/Cara_public#readme",
-  "repository": "https://github.com/iamherok/Cara_public.git",
-  "logo": "https://www.digitalartsonline.co.uk/cmsdata/slideshow/3441290/6.jpg",
+  "website": "https://github.com/ShinNouzen/Chitoge#readme",
+  "repository": "https://github.com/ShinNouzen/Chitoge.git",
+  "logo": "https://wallpapermemory.com/uploads/711/chitoge-kirisaki-wallpaper-full-hd-323316.jpg",
   "success_url": "/",
   "env": {
       "PREFIX": {
@@ -21,12 +21,6 @@
       },
       "SESSION": {
           "description": "A string for the session to be classified and to get access to the server endpoints"
-      },
-      "HEROKU_API": {
-          "description": "A api for accessing the heroku."
-      },
-      "HEROKU_DYNO_NAME": {
-          "description": "A string for defining the heroku dyno."
       },
       "MODS": {
           "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
@@ -53,6 +47,14 @@
       },
       "GENIUS_KEY": {
           "description": "Your access token of genius.com to fetch the lyrics",
+          "required": false
+      },
+      "MAL_USERNAME": {
+          "description": "Your username for myanimelist.net to make anime and manga search",
+          "required": false
+      },
+      "MAL_PASSWORD": {
+          "description": "Your password for myanimelist.net to make anime and manga search",
           "required": false
       }
   },
