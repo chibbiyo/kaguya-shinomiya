@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
       description: "Tags all group members in chat",
       aliases: ["all", "tagall", "ping"],
       category: "moderation",
-      usage: `${client.config.prefix}everyone`,
+      usage: `${client.config.prefix}everyone.`,
       adminOnly: true,
       baseXp: 20,
     });
