@@ -11,7 +11,7 @@ export default class Command extends BaseCommand {
   constructor(client: WAClient, handler: MessageHandler) {
     super(client, handler, {
       command: "everyone",
-      description: "Tags all group members in chat",
+      description: "Tag all group members in chat",
       aliases: ["all", "tagall", "ping"],
       category: "moderation",
       usage: `${client.config.prefix}everyone`,
@@ -29,7 +29,7 @@ export default class Command extends BaseCommand {
       await this.client.groupMetadata(M.from)
     ).participants;
     const stickers = [
-			"https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg",
+		        "https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg",
                         "https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg",
 			"https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg",
                         "https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg",
