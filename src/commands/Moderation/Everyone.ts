@@ -108,7 +108,7 @@ export default class Command extends BaseCommand {
       if (metadata.others.length > 0) {
         text += `\n`;
         for (const others of metadata.others) {
-          text += `\n🎗 *@${others.split("@")[0]}*`;
+          text += `\n👤 *@${others.split("@")[0]}*`;
         }
       }
       return void M.reply(
