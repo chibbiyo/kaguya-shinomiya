@@ -11,7 +11,7 @@ export default class Command extends BaseCommand {
                         command: "happy_birthday",
                         aliases: ["hbd", "hhp"],
 			description: "use for birthday wish",
-			category: "general",
+			category: "fun",
 			usage: `${client.config.prefix}happy_birthday`,
 			baseXp: 10,
 		});
