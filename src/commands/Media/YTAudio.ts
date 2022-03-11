@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
       description: "Downloads given YT Video and sends it as Audio",
       category: "media",
       aliases: ["yta"],
-      usage: `${client.config.prefix}ytv [URL]`,
+      usage: `${client.config.prefix}yta [URL]`,
       baseXp: 20,
     });
   }
