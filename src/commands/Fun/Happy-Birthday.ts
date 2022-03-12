@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
                         command: "happy_birthday",
                         aliases: ["hbd", "hhp"],
-			description: "use for birthday wish",
+			description: "You can use it for birthday wish",
 			category: "fun",
 			usage: `${client.config.prefix}happy_birthday`,
 			baseXp: 10,
@@ -31,12 +31,12 @@ export default class Command extends BaseCommand {
         } catch (err) {
             M.reply(`Profile Picture not Accessible of ${username}`)
             pfp =
-                'https://wallpaperaccess.com/full/5304840.png'
+                'https://telegra.ph/file/10d10b9761bdca617f1bb.jpg'
         }
         await M.reply(
             await request.buffer(
                 pfp ||
-                    'https://wallpaperaccess.com/full/5304840.png'
+                    'https://telegra.ph/file/10d10b9761bdca617f1bb.jpg'
             ),
             MessageType.image,
             undefined,
