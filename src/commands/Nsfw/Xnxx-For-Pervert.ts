@@ -9,12 +9,12 @@ import axios from 'axios'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'xnxx',
+            command: 'sex',
             aliases: ['xxx'],
             description: 'Download video from XNXX ',
             category: 'nsfw',
             dm: false,
-            usage: `${client.config.prefix}xnxx [name]`
+            usage: `${client.config.prefix}sex [name]`
         })
     }
     // static count = 0
