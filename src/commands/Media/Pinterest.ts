@@ -33,7 +33,7 @@ export default class Command extends BaseCommand {
 			);
 		if (amount > 20)
 			return void M.reply(`Do you want me to spam in this group?`);
-   
+                           /** https://api-xcoders.xyz/api/search/pinterest?query=${term}&apikey=f8YZwl2SD9
          const { data } = await axios.get(`https://hanzz-web.herokuapp.com/api/pinterest?query=${term}`)
         if (data.result[0] == undefined) return void M.reply("404 error")
         const buffer = await request.buffer(data.result[Math.floor(Math.random() * data.result.length)]).catch((e) => {
