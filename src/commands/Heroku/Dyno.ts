@@ -3,9 +3,12 @@ import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
 import { ISimplifiedMessage } from '../../typings'
 import axios from 'axios'
-import { Heroku } from 'heroku-client'
+import Heroku from 'heroku-client'
 import got from 'got'
-
+const heroku = new Heroku({
+    token: "your key"
+});
+const baseURI = '/apps/' + "your dyno name"
 import request from '../../lib/request'
 import { MessageType } from '@adiwajshing/baileys'
 // import { MessageType, Mimetype } from '@adiwajshing/baileys'
@@ -23,17 +26,14 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-    if (!this.client.config.hapi) return void M.reply("No heroku API key set");
-    if (!this.client.config.hname) return void M.reply("No heroku name set");
-const heroku = new Heroku({
-    token: `${this.client.config.hapi}`
-});
-const baseURI = '/apps/' + `${this.client.config.hname}`
+    //if (!this.client.config.hapi) return void M.reply("No heroku API key set");
+    //if (!this.client.config.hname) return void M.reply("No heroku name set");
+
     heroku.get('/account').then(async (account: any) => {
        const url = "https://api.heroku.com/accounts/" + account.id + "/actions/get-quota"
        const headers = {
             "User-Agent": "Chrome/80.0.3987.149 Mobile Safari/537.36",
-            "Authorization": "Bearer " + `${this.client.config.hapi}`,
+            "Authorization": "Bearer " + "your key",
             "Accept": "application/vnd.heroku+json; version=3.account-quotas",
         };
 
