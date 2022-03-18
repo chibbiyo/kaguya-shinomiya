@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
             (user, index) =>
                 (text += `#${index + 1}\n👨‍💻 *Username: ${
                     user.notify || user.vname || user.name || 'null'
-                }*\n*Contact Info [Hidden by Alι_]*\n\n`)
+                }*\n*Contact Info [Hidden by Alι_]*\n\n`) /* Use this code to show the Contact Numbers: https://wa.me/+${user?.jid?.split('@')[0]}*\n\n`)*/
         )
         text += `\nContact Alι_Aryαɴ at Telegram! \nhttps://t.me/AliAryanTech/ \n\n• *Texαs* ✨`
         return void M.reply(text)
