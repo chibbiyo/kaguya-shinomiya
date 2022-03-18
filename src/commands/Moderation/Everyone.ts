@@ -52,7 +52,7 @@ export default class Command extends BaseCommand {
       ));
     } else if (flags.includes("--h") || flags.includes("--hide")) {
       return void (await M.reply(
-        `*💬 Group: ${M.groupMetadata?.subject}*\n👥 *Members: ${
+        `💬 *Group: ${M.groupMetadata?.subject}*\n👥 *Members: ${
           members.length
         }*\n📢 *Announcer: @${M.sender.jid.split("@")[0]}*\n📧 *Tags: HIDDEN*`,
         undefined,
