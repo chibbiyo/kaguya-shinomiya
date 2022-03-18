@@ -1,8 +1,6 @@
 /** @format */
 
 declare module "akaneko";
-declare module "heroku-client";
-declare module "got"
 declare module "go-image-go";
 declare module "mathjs";
 declare module "canvacord";
