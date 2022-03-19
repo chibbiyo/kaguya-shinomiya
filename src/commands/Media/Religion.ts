@@ -1,10 +1,10 @@
 import { MessageType } from '@adiwajshing/baileys'
-import request from '../../lib/request'
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
 import { IParsedArgs, ISimplifiedMessage } from '../../typings'
 import axios from 'axios'
+import request from '../../lib/request'
 
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
             description: 'Search surah & ayat',
             category: 'media',
             usage: `${client.config.prefix}religion 1`
-            baseXp: 30,
+            baseXp: 30
         })
     }
      run = async (
