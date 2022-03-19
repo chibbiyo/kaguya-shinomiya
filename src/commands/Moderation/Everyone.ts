@@ -15,7 +15,8 @@ export default class Command extends BaseCommand {
       aliases: ["all", "tagall", "ping"],
       category: "moderation",
       usage: `${client.config.prefix}everyone`,
-      adminOnly: true, || modsOnly: true,
+      modsOnly: true,
+      adminOnly: true,
       baseXp: 20,
     });
   }
