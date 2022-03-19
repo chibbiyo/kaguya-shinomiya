@@ -37,9 +37,9 @@ export default class EventHandler {
 		const promote = event.action === "promote";
 		const demote = event.action === "demote";
 		/*const text = add
-			? `- ${group.subject || "___"} -\n\n💠 *Group Description:*\n${
+			? `${group.subject || "___"} ☄\n\n💬 *Group Description:*\n${
 					group.desc
-			  }\n\nHope you follow the rules and have fun!\n\n*‣ ${event.participants
+			  }\n\nHope you follow the rules and have fun! ❤️\n\n*‣ ${event.participants
 					.map((jid) => `@${jid.split("@")[0]}`)
 					.join(", ")}*`
 			: event.action === "remove"
