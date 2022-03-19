@@ -24,7 +24,7 @@ export default class Command extends BaseCommand {
 		if (!joined)
 			return void (await M.reply(`Give me a term to search, Baka!`));
 		const chitoge: any = joined.trim().split("|");
-		const term: string = chitoge[0];
+		const term: number = chitoge[0];
 		const amount: number = chitoge[1];
 		if (!amount)
 			return void M.reply(
