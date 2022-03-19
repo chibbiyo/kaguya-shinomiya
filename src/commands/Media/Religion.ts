@@ -31,6 +31,8 @@ export default class Command extends BaseCommand {
 				`Give me the number , Baka!\n\nExample: *${this.client.config.prefix}religion 1|1*`
 			);
      const { data } = await axios.get(`https://api-xcoders.xyz/api/religion/quran?surah=${term}&ayat=${amount}&apikey=tFnG6PJvrg`)
-        M.reply(await audio.getBuffer(), MessageType.audio).catch((reason: Error) =>
+        M.reply(await track.getAudio(), MessageType.audio).catch((reason: any) =>
             M.reply(`✖ An error occurred, Reason: ${reason}`)
+        )
     }
+}
