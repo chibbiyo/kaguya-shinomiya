@@ -15,7 +15,6 @@ export default class Command extends BaseCommand {
       aliases: ["all", "tagall", "ping"],
       category: "moderation",
       usage: `${client.config.prefix}everyone`,
-      modsOnly: true,
       adminOnly: true,
       baseXp: 20,
     });
@@ -90,7 +89,7 @@ export default class Command extends BaseCommand {
         if (k.isAdmin) continue;
         metadata.others.push(k.jid);
       }
-      let text = `*💬 Group: ${M.groupMetadata?.subject}*\n👥 *Members: ${
+      let text = `💬 *Group: ${M.groupMetadata?.subject}*\n👥 *Members: ${
         members.length
       }*\n📢 *Announcer: @${M.sender.jid.split("@")[0]}*\n📧 *Tags:*`;
       if (metadata.mods.length > 0) {
