@@ -44,7 +44,7 @@ export default class Command extends BaseCommand {
     users.sort((a, b) => (a.Xp < b.Xp ? 1 : b.Xp < a.Xp ? -1 : 0));
     const place = users.findIndex((x: IUser) => x.jid === M.sender.jid);
     const placeOrdinal = await ordinal(place + 1);
-    if (place < 10) text += `\t*(You are in the ${placeOrdinal} place)*`;
+    if (place < 10) text += `\n\n*You are in the ${placeOrdinal} place* 🎉`;
     let n = 10;
     if (users.length < 10) n = users.length;
     for (let i = 0; i < n; i++) {
