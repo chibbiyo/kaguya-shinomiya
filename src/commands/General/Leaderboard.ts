@@ -9,7 +9,7 @@ export default class Command extends BaseCommand {
   constructor(client: WAClient, handler: MessageHandler) {
     super(client, handler, {
       command: "leaderboard",
-      description: "Shows the leaderboard",
+      description: "Shows the leaderboard\n To see who have the highest rank on groups!",
       aliases: ["lb"],
       category: "general",
       usage: `${client.config.prefix}lb | ${client.config.prefix}lb --group`,
@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
     let text = "";
     const users = [];
     if (flags.includes("--group")) {
-      text += "👑 *GROUP LEADERBOARD* 👑";
+      text += "𝔾𝕣𝕠𝕦𝕡 𝕃𝕖𝕒𝕕𝕖𝕣𝕓𝕠𝕒𝕣𝕕 👑";
       const members = await (
         await this.client.groupMetadata(M.from)
       ).participants;
@@ -34,7 +34,7 @@ export default class Command extends BaseCommand {
         users.push(User);
       }
     } else {
-      text += "👑 *LEADERBOARD* 👑";
+      text += "𝔾𝕣𝕠𝕦𝕡 𝕃𝕖𝕒𝕕𝕖𝕣𝕓𝕠𝕒𝕣𝕕 👑";
       const Users = await this.client.DB.user.find();
       for (let i = 0; i < Users.length; i++) {
         const User = await this.client.getUser(Users[i].jid);
