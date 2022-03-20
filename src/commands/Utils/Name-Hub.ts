@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
     }
     // static count = 0
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
-        if (!joined) return void (await M.reply(`Give me your name one word only first or last, Baka!`))
+        if (!joined) return void (await M.reply(`Give me your name one word only first or last one, Baka!`))
         const chitoge = joined.trim()
         return void M.reply( await request.buffer(`https://api-xcoders.xyz/api/textpro/pornhub?text=${chitoge}&text2=hub&apikey=tFnG6PJvrg`),
         MessageType.image,
