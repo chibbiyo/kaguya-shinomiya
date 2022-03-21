@@ -9,10 +9,10 @@ import { ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "hi",
-			description: "Generally used to check if bot is Up",
+			command: "texas",
+			description: "Get some info about bot",
 			category: "general",
-			usage: `${client.config.prefix}hi`,
+			usage: `${client.config.prefix}texas`,
 			baseXp: 10,
 		});
 	}
@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
 			MessageType.image,
 			{
 				
-				caption: `*I'm Texas*\n\nAn WhatsApp group management bot. \nI have much features send the command *${this.client.config.prefix}help* to know them.\nThis bot created with ❤ By Alι_.\n`,
+				caption: *I'm Texαs* ❤ \n\n*Description:*\nA WhatsApp bot with a lot anime features! Use ${client.config.prefix}help to get help menu of the bot. \nUse ${client.config.prefix}info to check my info! \nUse ${client.config.prefix}support to join our WhatsApp Support Group.\nUse ${client.config.prefix}chat to chat with bot.\n This bot is created with ❤️ by *Alι_Aryαɴ*\n`,
 			}
 		);
 	};
