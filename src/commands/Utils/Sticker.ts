@@ -10,9 +10,9 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'sticker',
             aliases: ['s'],
-            description: 'Converts images/videos into stickers',
+            description: 'Converts images/videos into stickers. \nThat here --c crops the sticker into square and --s stretches it.',
             category: 'utils',
-            usage: `${client.config.prefix}sticker [(as caption | tag)[video | image]]`,
+            usage: `${client.config.prefix}sticker [(as caption | tag)[video | image]] \n${client.config.prefix}sticker --1 \n${client.config.prefix}sticker --crop --1 \n${client.config.prefix}sticker --c --50 \n${client.config.prefix}sticker --s --40`,
             baseXp: 30
         })
     }
