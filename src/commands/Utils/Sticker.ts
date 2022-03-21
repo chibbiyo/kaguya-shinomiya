@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'sticker',
             aliases: ['s'],
-            description: 'Converts images/videos into stickers. \nThat here --c crops the sticker into square and --s stretches it.\nIf normal !sticker command does not work because the gif is too big. \nYou can try !sticker with lower quality.\nlike !sticker --1 or vice versa.\n*Note:* \nNumber must be between 1-100 else it will be set to default 50 value',
+            description: 'Converts images/videos into stickers. \nThat here --c crops the sticker into square and --s stretches it.\nIf normal *${this.client.config.prefix}sticker* command does not work because the gif is too big. \nYou can try *${this.client.config.prefix}sticker* with lower quality.\nlike *${this.client.config.prefix}sticker* --1 or vice versa.\n*Note:* \nNumber must be between 1-100 else it will be set to default 50 value',
             category: 'utils',
             usage: `${client.config.prefix}sticker [(as caption | tag)[video | image]] \n\n${client.config.prefix}sticker --1 \n${client.config.prefix}sticker --crop --1 \n${client.config.prefix}sticker --c --50 \n${client.config.prefix}sticker --s --40`,
             baseXp: 30
