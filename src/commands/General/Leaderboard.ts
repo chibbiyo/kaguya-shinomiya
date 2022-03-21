@@ -9,7 +9,7 @@ export default class Command extends BaseCommand {
   constructor(client: WAClient, handler: MessageHandler) {
     super(client, handler, {
       command: "leaderboard",
-      description: "Shows the leaderboard\n To see who have the highest rank on groups!",
+      description: "Shows the leaderboard \nTo see who have the highest rank on groups!",
       aliases: ["lb"],
       category: "general",
       usage: `${client.config.prefix}lb | ${client.config.prefix}lb --group`,
