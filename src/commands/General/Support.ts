@@ -9,7 +9,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'support',
             aliases: ['support'],
-            description: 'Gets the support group links',
+            description: 'Gets the support group links In DM',
             category: 'general',
             usage: `${client.config.prefix}Support`,
             baseXp: 10
@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage): Promise<void> => {
         (await this.client.sendMessage(
         M.sender.jid,
-        `    ♥️MY MASTER GROUP♥️\n\n*🎇ELAINA support:🎇* *https://chat.whatsapp.com/Hooxu1kZEoFKoNpdFLqXMO*\n\n*💫TOKYO MANJI GANG (FUNGROUP)💫*:*https://chat.whatsapp.com/I7Q81FHAkIq8xtMrC7SKAD*`,
+        `Texαs Support Group ✨\n\n *https://chat.whatsapp.com/FOS5jtlxl2VFsYdA2qHCVv* \n\nYou Can Also Contact on Telegram Group! \n*https://t.me/AnimeListChat*`,
            MessageType.text
         ))
         const n = [
