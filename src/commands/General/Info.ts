@@ -31,16 +31,26 @@ export default class Command extends BaseCommand {
 			const minutes = Math.floor((seconds % (60 * 60)) / 60);
 			const secs = Math.floor(seconds % 60);
 			return `${pad(hours)}:${pad(minutes)}:${pad(secs)}`;
-		};
+		}
+		const users = await this.client.DB.user.count();
+                const uban = await this.client.DB.user.count({ban: true});
+		function uptime() {
+			return newFunction(formatTime);
+		}
+                this.run = async (M: typings.ISimplifiedMessage): Promise<void> => {
                 const texas =
-			"https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg";
-		const uptime = () => formatTime(process.uptime());
+			"https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg"
 		return void this.client.sendMessage(
 			M.from,
 			{ url: texas },
 			MessageType.image,
 			{
-				caption: `*╭─* \n*│Name: Texαs* ✨\n*│ℙ𝕣𝕖𝕗𝕚𝕩:* *${this.client.config.prefix}*\n*│Uptime: ${uptime()}*\n*│Total Groups: ${chats.length}*\n*│Owner: Alι_Aryαɴ*\n*╰────────────*\n`
-		        })
-           };
+				caption: `*╭─* \n*│Name: Texαs* ✨\n*│ℙ𝕣𝕖𝕗𝕚𝕩:* *${this.client.config.prefix}*\n*│Uptime: ${uptime()}*\n*│Total Groups: ${chats.length}*\n*│Owner: Alι_Aryαɴ*\n*╰────────────*\n *My cute people: ${users}*\n\n💢 *Banned Users: ${uban}*\n\n\n`,
+		        }
+			);
+		};
+	}
+}
+function newFunction(formatTime: (seconds: any) => string) {
+	return formatTime(process.uptime());
 }
