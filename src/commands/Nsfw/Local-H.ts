@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
 			command: "loh",
-			description: "Local H test without Api",
+			description: "Local H test without any good source",
 			category: "nsfw",
 			usage: `${client.config.prefix}loh`,
 			baseXp: 10,
