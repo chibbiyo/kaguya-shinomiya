@@ -19,8 +19,8 @@ export default class Command extends BaseCommand {
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
 		const images = [
-			"https://mega.nz/file/TB90HCaS#kOYhj9q-XTCv5RDfCkSOtKsCG9i2OFconWZ-zrN_D8U",
-                        "https://mega.nz/file/TB90HCaS#kOYhj9q-XTCv5RDfCkSOtKsCG9i2OFconWZ-zrN_D8U",
+			"https://file2directlink.herokuapp.com/442595682039565070350133788/%5BHC%5D%20%5B03-Euphoria%5D%20%5B720p%5D%20compressed.mkv",
+                        "https://file2directlink.herokuapp.com/442595682039565070350133788/%5BHC%5D%20%5B03-Euphoria%5D%20%5B720p%5D%20compressed.mkv",
 ];
                 const selected = images[Math.floor(Math.random() * images.length)];
 		return void this.client.sendMessage(
