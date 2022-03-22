@@ -19,8 +19,8 @@ export default class Command extends BaseCommand {
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
 		const images = [
-			"https://telegra.ph/file/bca7367cb8496d5cef1a5.mp4",
-                        "https://telegra.ph/file/bca7367cb8496d5cef1a5.mp4",
+			"https://mega.nz/file/TB90HCaS#kOYhj9q-XTCv5RDfCkSOtKsCG9i2OFconWZ-zrN_D8U",
+                        "https://mega.nz/file/TB90HCaS#kOYhj9q-XTCv5RDfCkSOtKsCG9i2OFconWZ-zrN_D8U",
 ];
                 const selected = images[Math.floor(Math.random() * images.length)];
 		return void this.client.sendMessage(
