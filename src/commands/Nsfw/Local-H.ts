@@ -13,6 +13,7 @@ export default class Command extends BaseCommand {
 			description: "Local H test without any good source",
 			category: "nsfw",
 			usage: `${client.config.prefix}loh`,
+                        adminOnly: true,
 			baseXp: 10,
 		});
 	}
