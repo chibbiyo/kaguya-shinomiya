@@ -1,6 +1,6 @@
 {
     
-  "name": "Elaina",
+  "name": "kaguya-shinomiya",
   "description": "A WhatsApp Bot With Rich NSFW Features based on chitoge.",
   "keywords": [
       "bot",
@@ -12,8 +12,8 @@
       "whatsapp-sticker-bot",
       "whatsapp-botto"
   ],
-  "website": "https://github.com/Ronen6999/Elaina-bot/blob/main/README.md",
-  "repository": "https://github.com/Ronen6999/Elaina-bot.git",
+  "website": "https://github.com/Sungmin07/kaguya-shinomiya/blob/main/README.md",
+  "repository": "https://github.com/Sungmin07/kaguya-shinomiya",
   "logo": "https://i.ibb.co/kqPYDT9/Elaina.png555",
   "success_url": "/",
   "env": {
