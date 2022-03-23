@@ -1,7 +1,7 @@
 [![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine)
 
 <div align="center">
-<a href="https://ibb.co/r46hNNG"><img src="https://i.ibb.co/r46hNNG/images-13.jpg" alt="images-13" border="0"></a>
+<a href="https://i.ibb.co/fXthnqS/images-q-tbn-ANd9-Gc-Szdu2bzlxoe2l-O3xz-Wf-Tx2h2-J79-Bs9-ARFs-Bw-usqp-CAU.jpg"><img src="https://i.ibb.co/fXthnqS/images-q-tbn-ANd9-Gc-Szdu2bzlxoe2l-O3xz-Wf-Tx2h2-J79-Bs9-ARFs-Bw-usqp-CAU.jpg" alt="images-13" border="0"></a>
 
 # **Aera-chan : A WhatsApp BOT WITH RICH ANIME FEATURES**
 
