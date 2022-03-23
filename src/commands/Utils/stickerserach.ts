@@ -32,7 +32,7 @@ if ((data as { error: string }).error) return void (await M.reply('Sorry, couldn
 const b = `${data.results?.[Math.floor(Math.random() * data.results.length)]?.media[0]?.mp4?.url}`
 
         const sticker: any = await new Sticker(b, {
-			pack: "Sticker",
+			pack: "Sticker Pack",
 			author: "BY Texαs ✨",
 			quality: 90,
 			type: "crop",
