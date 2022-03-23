@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-    await M.reply( await request.buffer(`https://i.ibb.co/3d7hDSZ/thumb-1920-1114169.jpg`),
+    await M.reply( await request.buffer(`https://i.ibb.co/ctcC4Xf/images-q-tbn-ANd9-Gc-Ri7-CKzd-Ps-Gr73vzo-Hgs-Oq-Gg-Dk-MK-Irl-ECw-Q-usqp-CAU.jpg`),
         MessageType.image,
                     undefined,
                     undefined,
