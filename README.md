@@ -3,7 +3,7 @@
 <div align="center">
 <a href="https://i.ibb.co/fXthnqS/images-q-tbn-ANd9-Gc-Szdu2bzlxoe2l-O3xz-Wf-Tx2h2-J79-Bs9-ARFs-Bw-usqp-CAU.jpg"><img src="https://i.ibb.co/fXthnqS/images-q-tbn-ANd9-Gc-Szdu2bzlxoe2l-O3xz-Wf-Tx2h2-J79-Bs9-ARFs-Bw-usqp-CAU.jpg" alt="images-13" border="0"></a>
 
-# **Aera-chan : A WhatsApp BOT WITH RICH ANIME FEATURES**
+# **SHINOMIYA : A WhatsApp BOT WITH RICH ANIME FEATURES**
 
 [![CodeFactor](https://www.codefactor.io/repository/github/shineiichijo/chitoge/badge)](https://www.codefactor.io/repository/github/shineiichijo/chitoge)
 
@@ -11,7 +11,7 @@
 
 > A Fully Modular and Efficient Bot <br>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/Sungmin69/Aera-chan.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/Sungmin07/kaguya-shinomiya)
 </div><br/>
 <br/>
 
@@ -27,7 +27,7 @@
 ## 💻 Deploy/Hosting Guide
 
 -   Section Moved to
-    [Chitoge-Guides](https://github.com/Sungmin07/Aera-chan/blob/main/README.md)
+    [Chitoge-Guides](https://github.com/Sungmin07/kaguya-shinomiya/blob/main/README.md)
 
 ## 🍥 Features of the Repo
 
