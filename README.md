@@ -1,7 +1,9 @@
-<div align="center">
-<a href="https://ibb.co/wgPbrWZ"><img src="https://i.ibb.co/fFyKGpV/thumb-1920-1114169.jpg" alt="thumb-1920-1114169" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>bbcode image</a><br />
+[![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine)
 
-# **Elaina : Made by Ronen. A WhatsApp BOT WITH RICH NSFW FEATURES BASED ON <a href="https://github.com/ShineiIchijo/Chitoge">CHITOGE</er></a></h1>**
+<div align="center">
+<a href="https://ibb.co/r46hNNG"><img src="https://i.ibb.co/r46hNNG/images-13.jpg" alt="images-13" border="0"></a>
+
+# **Aera-chan : A WhatsApp BOT WITH RICH ANIME FEATURES**
 
 [![CodeFactor](https://www.codefactor.io/repository/github/shineiichijo/chitoge/badge)](https://www.codefactor.io/repository/github/shineiichijo/chitoge)
 
@@ -9,8 +11,7 @@
 
 > A Fully Modular and Efficient Bot <br>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/Ronen6999/Elaina-bot.git)
-
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/Sungmin69/Aera-chan.git)
 </div><br/>
 <br/>
 
@@ -26,7 +27,7 @@
 ## 💻 Deploy/Hosting Guide
 
 -   Section Moved to
-    [Chitoge-Guides](https://github.com/ShineiIchijo/Chitoge-Guides/blob/main/README.md)
+    [Chitoge-Guides](https://github.com/Sungmin69/Aera-chan/blob/main/README.md)
 
 ## 🍥 Features of the Repo
 
@@ -39,13 +40,17 @@
 -   Make sure to follow the ESLint Rules while editing the code and run
     `yarn run prettier-format` before opening PRs
 
-##  🚀 Official Bot Contributors
+##  🚀 Our Amazing Contributors
 
 <a href="https://github.com/ShineiIchijo/Chitoge/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ShineiIchijo/Chitoge" />
 </a>
 
-## I don't have any contributers LOL 😂
+
+### 🟢 WhatsApp Group
+
+# [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/JlGNyRC9TMI07r1Fvt9fTU)
+
 ## 📄 License
 
 Distributed under the GNU AFFERO GENERAL PUBLIC License. See [LICENSE](/LICENSE)
@@ -54,14 +59,3 @@ for more information.
 ## 🎗Help
 Please give this repo a ⭐ if it helped you.
  
-## 🚀The WhatsApp bots that I recomended🚀
-<details>
-<summary>Click Here</summary>
-
-![Kaoi][![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=PrajjwalDatir&repo=Kaoi&theme=buefy)](https://github.com/PrajjwalDatir/kaoi)
-
-![Chitoge][![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=ShineiIchijo&repo=Chitoge&theme=buefy)](https://github.com/ShinNouzen/Chitoge)
-
-![Cara_public][![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=iamherok&repo=Cara_public&theme=buefy)](https://github.com/iamherok/Cara_public)
-
-
