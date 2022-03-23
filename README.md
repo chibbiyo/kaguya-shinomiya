@@ -27,7 +27,7 @@
 ## 💻 Deploy/Hosting Guide
 
 -   Section Moved to
-    [Chitoge-Guides](https://github.com/Sungmin69/Aera-chan/blob/main/README.md)
+    [Chitoge-Guides](https://github.com/Sungmin07/Aera-chan/blob/main/README.md)
 
 ## 🍥 Features of the Repo
 
