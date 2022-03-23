@@ -16,7 +16,6 @@ export default class Command extends BaseCommand {
       category: "moderation",
       usage: `${client.config.prefix}everyone`,
       adminOnly: ture,
-      modsOnly: ture, 
       baseXp: 20,
     });
   }
