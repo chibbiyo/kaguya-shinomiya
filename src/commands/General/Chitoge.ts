@@ -9,17 +9,17 @@ import { ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "elaina",
+			command: "shinomiya",
 			description: "Displays the info",
 			category: "general",
-			usage: `${client.config.prefix}elaina`,
+			usage: `${client.config.prefix}shinomiya`,
 			baseXp: 200,
 		});
 	}
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
 		const chitoge =
-			"https://c.tenor.com/7iEFLDDGQbMAAAPo/majo-no-tabitabi-the-journey-of-elaina.mp4";
+			"https://c.tenor.com/T0UHeAi26mEAAAPo/kaguya-shinomiya.mp4";
 		return void this.client.sendMessage(
 			M.from,
 			{ url: chitoge },
@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
-				caption: `💕 *Elaina* 💕\n\n🍀 *Description: A WhatsApp Bot developed by *Ronen* With Rich Anime features based on Elaina.*\n\n🌐 *OFFICIAL BOT URL:https://github.com/Ronen6999/Elaina-bot* \n\n 📒 *Guide:https://github.com/Ronen6999/Elaina-bot* \n\n 👾 *BOT URL:https://github.com/Ronen6999/Elaina-bot* \n`,
+				caption: `💕 *shinomiya* 💕\n\n🍀 *Description: A WhatsApp Bot developed by *Sungmin*. \n`,
 			}
 		);
 	};
