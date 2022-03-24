@@ -8,7 +8,7 @@ export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
 			command: "ngif",
-			description: `Know it yourself.`,
+			description: `Know it yourself. `,
 			aliases: ["ngif"],
 			category: "nsfw",
 			usage: `${client.config.prefix}ngif`,
