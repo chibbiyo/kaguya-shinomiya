@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
             command: 'toimg',
             aliases: ['toimage'],
             description: 'sends image/gif of a sticker',
-            category: 'media',
+            category: "utils",
             usage: `${client.config.prefix}toimg [(tag)[sticker]]`,
             baseXp: 35
         })
@@ -81,6 +81,7 @@ export default class Command extends BaseCommand {
             return void M.reply(
                 animatedgif,
                 MessageType.video,
+                Mimetype.gif,
                 undefined,
                 undefined
             )
