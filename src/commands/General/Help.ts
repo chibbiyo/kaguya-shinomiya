@@ -47,7 +47,7 @@ export default class Command extends BaseCommand {
 │⋊ 𝕌𝕤𝕖𝕣: *${M.sender.username}*
 │⋊ ℕ𝕒𝕞𝕖: shinomiya
 │⋊ ℙ𝕣𝕖𝕗𝕚𝕩: ${this.client.config.prefix}
-│⋊ 𝕆𝕨𝕟𝕖𝕣: *${this.client.config.prefix}mod* Ask Mods if you want to add me in your Group or send your group link in private
+│⋊ 𝕆𝕨𝕟𝕖𝕣: *${this.client.config.prefix}mod* Ask Mods if you want to add me in your Group
 │⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: https://chat.whatsapp.com/G89MF8YbNPt2zOdF6HItyD
 ╰────────────┈平和                            \n\n`
             const keys = Object.keys(categories)
