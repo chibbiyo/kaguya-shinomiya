@@ -10,7 +10,7 @@ import { MessageType } from '@adiwajshing/baileys'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'crossplay',
+            command: 'cosplay',
             description: `Will send you random crossplay img.`,
             aliases: ['cp'],
             category: 'weeb',
