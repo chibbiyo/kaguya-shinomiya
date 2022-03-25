@@ -111,7 +111,7 @@ export default class Command extends BaseCommand {
 			.setStatus("online", false)
 			.setLevel(level, "Level:", true)
 			.setRank(0, `Role: ${role}`, true)
-			.setProgressBar("#0ff586", "COLOR")
+			.setProgressBar("#54ffad", "COLOR")
 			.setOverlay("#36454F")
 			.setUsername(username)
 			.setDiscriminator("0007")
