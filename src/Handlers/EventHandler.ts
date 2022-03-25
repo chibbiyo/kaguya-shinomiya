@@ -99,7 +99,7 @@ export default class EventHandler {
 				.setColor("username-box", "#14ffb0")
 				.setColor("discriminator-box", "#000000")
 				.setColor("message-box", "#FF0000")
-				.setColor("title", "#ffffff")
+				.setColor("title", "#0ff586")
 				.setColor("avatar", "#FF0000")
 				.setText("member-count", `- ${memberCount} member !`)
 				.setText("message", `we're probably not gonna miss you`)
