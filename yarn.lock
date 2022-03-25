@@ -6836,19 +6836,6 @@ w3c-xmlserializer@^2.0.0:
   dependencies:
     xml-name-validator "^3.0.0"
 
-w5-textmaker@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/w5-textmaker/-/w5-textmaker-1.0.2.tgz"
-  dependencies:
-    axios "^0.21.1"
-    cheerio "^1.0.0-rc.5"
-    cookie "^0.4.1"
-    form-data "^4.0.0"
-    instatouch "^2.3.3"
-    moment-timezone "^0.5.33"
-    node-fetch "^2.6.1"
-    paste.gg "^1.0.3"
-
 wa-sticker-formatter@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/wa-sticker-formatter/-/wa-sticker-formatter-4.3.2.tgz#88c5bbb5266c696f7a82107fc6868c46f60fda50"
