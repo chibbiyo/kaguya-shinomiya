@@ -15,7 +15,8 @@ export default class Command extends BaseCommand {
       aliases: ["all", "tagall", "ping"],
       category: "moderation",
       usage: `${client.config.prefix}everyone`,
-      adminOnly: true,
+      if (!this.client.config.mods.includes(M.sender.jid) && !M.sender.isAdmin) 
+      return void M.reply("You can't use this command")
       baseXp: 20,
     });
   }
