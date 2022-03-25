@@ -24,8 +24,6 @@ export default class Command extends BaseCommand {
     M: ISimplifiedMessage,
     { joined, flags }: IParsedArgs
   ): Promise<void> => {
-   if (!this.client.config.mods.includes(M.sender.jid) && !M.sender.isAdmin) 
-      return void M.reply("You can't use this command")
     flags.forEach((flag) => (joined = joined.replace(flag, "")));
     const members = await (
       await this.client.groupMetadata(M.from)
