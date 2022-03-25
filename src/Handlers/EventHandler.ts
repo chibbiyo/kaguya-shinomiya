@@ -96,7 +96,7 @@ export default class EventHandler {
 				.setGuildName(group.subject)
 				.setAvatar(pfp)
 				.setColor("border", "#36454F")
-				.setColor("username-box", "#14ffb0")
+				.setColor("username-box", "#000000")
 				.setColor("discriminator-box", "#000000")
 				.setColor("message-box", "#FF0000")
 				.setColor("title", "#0ff586")
