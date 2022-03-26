@@ -8,7 +8,7 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: "report",
-            aliases: ["rep"],
+            aliases: ["bug"],
             description: "send message mods, report, issue, advice",
             category: "general",
             usage: `${client.config.prefix}report`,
