@@ -17,7 +17,7 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'toimg',
-            aliases: ['img', 'sti'],
+            aliases: ['toimg'],
             description: 'sends image/gif of a sticker',
             category: 'utils',
             usage: `${client.config.prefix}toimg [(tag)[sticker]]`,
