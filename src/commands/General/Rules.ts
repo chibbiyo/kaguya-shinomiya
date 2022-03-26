@@ -20,13 +20,8 @@ export default class Command extends BaseCommand {
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
 		
-		return void this.client.sendMessage(
-			
-			MessageType.extendedText,
-			{
-				
-				caption: `*I'm Texas*\n\nAn WhatsApp group management bot. \nI have much features send the command *${this.client.config.prefix}help* to know them.\nThis bot created with ❤ By Alι_.\n`,
-			}
+		await M.reply(
+			`*━━❰Texαs❱━━*`
 		);
 	};
 }
