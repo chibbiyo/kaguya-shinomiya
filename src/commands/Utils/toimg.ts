@@ -17,9 +17,9 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'toimg',
-            aliases: ['toimage'],
+            aliases: ['img', 'sti'],
             description: 'sends image/gif of a sticker',
-            category: "utils",
+            category: 'utils',
             usage: `${client.config.prefix}toimg [(tag)[sticker]]`,
             baseXp: 35
         })
@@ -51,6 +51,7 @@ export default class Command extends BaseCommand {
 		animated webp will give error 
 		*/
             } catch (error) {
+M.reply("Sorry I can't convert this animated sticker into a gif")
                 async function tomp4(buffer:Buffer): Promise<Buffer> {
 
                 const read = buffer
@@ -59,11 +60,11 @@ export default class Command extends BaseCommand {
                 fs.mkdir(destination)
 
                 const writeFileDest = destination + '/input.webp'
-                const frames = destination + '/frames-%0d.png'
+                const frames = destination + '/frames.png'
                 await fs.writeFile(writeFileDest, read)
 
 
-                await exe(`ffmpeg -i ${writeFileDest} ${frames}`)
+                await exe(`magick ${writeFileDest} ${frames}`)
 
                 //  delay(60000)
                 await exe(`ffmpeg -r 25 -i ${destination}/frames-%0d.png -c:v libx264 -pix_fmt yuv420p "${destination}/out.mp4"`)
@@ -81,7 +82,6 @@ export default class Command extends BaseCommand {
             return void M.reply(
                 animatedgif,
                 MessageType.video,
-                Mimetype.gif,
                 undefined,
                 undefined
             )
