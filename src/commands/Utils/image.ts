@@ -11,7 +11,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'image',
             description: 'Will search img from the given term',
-            aliases: ['image,img'],
+            aliases: ['image', 'img'],
             category: 'utils',
             usage: `${client.config.prefix}img`
         })
@@ -32,7 +32,7 @@ export default class Command extends BaseCommand {
                     MessageType.image,
                     undefined,
                     undefined,
-                    `HERE YOU GO ✨`,
+                    `*Here you go* ✨`,
                     undefined
                 ).catch((e) => {
                     console.log(`This error occurs when an image is sent via M.reply()\n Child Catch Block : \n${e}`)
