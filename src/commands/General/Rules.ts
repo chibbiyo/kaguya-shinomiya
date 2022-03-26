@@ -9,10 +9,10 @@ import { ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "r",
+			command: "ra",
 			description: "Gp",
 			category: "general",
-			usage: `${client.config.prefix}r`,
+			usage: `${client.config.prefix}ra`,
                         dm: true,
 			baseXp: 10,
 		});
