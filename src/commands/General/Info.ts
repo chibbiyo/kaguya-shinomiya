@@ -1,10 +1,10 @@
 /** @format */
 
+import { MessageType, Mimetype } from "@adiwajshing/baileys/lib/WAConnection";
 import MessageHandler from "../../Handlers/MessageHandler";
 import BaseCommand from "../../lib/BaseCommand";
 import WAClient from "../../lib/WAClient";
-import { ISimplifiedMessage } from "../../typings";
-import { MessageType } from "@adiwajshing/baileys";
+import * as typings from "../../typings";
 
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
@@ -38,17 +38,16 @@ export default class Command extends BaseCommand {
 			return newFunction(formatTime);
 		}
 		this.run = async (M: typings.ISimplifiedMessage): Promise<void> => {
-			const chitoge =
+			const texas =
 				"https://c.tenor.com/veo9RwLpw8AAAAPo/nakano-yotsuba-wolverine.mp4";
 			return void this.client.sendMessage(
 				M.from,
-				{ url: chitoge },
-				MessageType.video,
+				{ url: texas },
+				MessageType.image,
 				{
-					quoted: M.WAMessage,
-					mimetype: Mimetype.gif,
-					caption: `━━━❰ 🅨︎🅞︎🅣︎🅢︎🅤︎🅑︎🅐︎ ❱━━━\n\n🔮 *Groups: ${chats.length}*\n\n🚦 *Uptime: ${uptime()}*\n\n🦆 *My cute people: ${users}*\n\n💢 *Banned Users: ${uban}*\n\n\n`,
-				}
+				
+caption: `*╭─* \n*│Name: Texαs* ✨\n*│ℙ𝕣𝕖𝕗𝕚𝕩:* *${this.client.config.prefix}*\n*│Uptime: ${uptime()}*\n*│Total Groups: ${chats.length}*\n*│Total Members: ${users}*\n*│Banned Members: ${uban}*\n*│Owner: Alι_Aryαɴ*\n*╰────────────*\n`
+		        }
 			);
 		};
 	}
