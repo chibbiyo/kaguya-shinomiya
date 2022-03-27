@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
                     user.notify || user.vname || user.name || 'null'
                 }*\n*Contact Info: https://wa.me/+${user?.jid?.split('@')[0]}*\n\n`)
         )
-        text += `\nContact Alι_Aryαɴ at Telegram! \nhttps://t.me/AliAryanTech/ \n\n• *Texαs* ✨`
+        text += `\n*Texαs* ✨`
         return void M.reply(text)
     }
 }
