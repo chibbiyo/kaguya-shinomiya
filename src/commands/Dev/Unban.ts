@@ -9,6 +9,7 @@ export default class Command extends BaseCommand {
             command: 'unban',
             description: 'Unban the tagged users globally',
             category: 'dev',
+            dm: true,
             usage: `${client.config.prefix}unban [@tag]`,
             modsOnly: true,
             baseXp: 0
