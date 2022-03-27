@@ -45,10 +45,7 @@ export default class Command extends BaseCommand {
 				{ url: texas },
 				MessageType.image,
 				{
-					quoted: M.WAMessage,
-					mimetype: Mimetype.gif,
                                         caption: `*╭─* \n*│Name: Texαs* ✨\n*│ℙ𝕣𝕖𝕗𝕚𝕩:* *${this.client.config.prefix}*\n*│Uptime: ${uptime()}*\n*│Total Groups: ${chats.length}*\n*│Total Members: ${users}*\n*│Banned Members: ${uban}*\n*│Owner: Alι_Aryαɴ*\n*╰────────────*\n`
-		        
 				}
 			);
 		};
