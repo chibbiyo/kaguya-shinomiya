@@ -18,9 +18,9 @@ export default class Command extends BaseCommand {
 
     run = async (
 
-		M: ISimplifiedMessage,		{ joined }: IParsedArgs
-
-	): Promise<void> => {
+		M: ISimplifiedMessage,	{ joined }: IParsedArgs
+): Promise<void> => {
+              if (!joined) return void (await M.reply(`Please provide report Message.`))
              const user = M.mentioned[0] ? M.mentioned[0] : M.sender.jid
         let username = user === M.sender.jid ? M.sender.username : ''
         if (!username) {
