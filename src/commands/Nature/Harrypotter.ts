@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
 			command: "harrypotter",
 			description: `Get text image`,
 			aliases: ["hp"],
-			category: "creation",
+			category: "nature",
 			usage: `${client.config.prefix}harrypotter`,
 			baseXp: 50,
 		});
@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
 					MessageType.image,
 					undefined,
 					undefined,
-					`🌟 Here you go.\n`,
+					`✨ Here you go.\n`,
 					undefined
 				).catch((e) => {
 					console.log(
