@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
 			command: "harrypotter",
-			description: `Get text image`,
+			description: `Get text image.`,
 			aliases: ["hp"],
 			category: "nature",
 			usage: `${client.config.prefix}harrypotter`,
