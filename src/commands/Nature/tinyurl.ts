@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
             command: 'shorturl',
             description: 'Short your given url.',
             aliases: ['srurl'],
-            category: 'utils',
+            category: 'nature',
             usage: `${client.config.prefix}shorturl [Your url]`
         })
     }
