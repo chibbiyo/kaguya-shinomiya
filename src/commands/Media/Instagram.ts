@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'instagram',
-            aliases: ['insta', 'ig'],
+            aliases: ['insta', 'igdl'],
             description: 'Download the image or video from Instagram',
             category: 'media',
             dm: true,
