@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
             command: "namehub",
 			description: `Get text image of HUB`,
 			aliases: ["nhub", "nh", "hub"],
-			category: "utils",
+			category: "creation",
 			usage: `${client.config.prefix}namehub`,
 			baseXp: 50,
         })
