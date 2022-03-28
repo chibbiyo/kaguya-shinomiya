@@ -30,6 +30,7 @@ export type TCategory =
 	| "educative"
 	| "general"
 	| "media"
+        | "nature"
 	| "moderation"
 	| "nsfw"
 	| "utils"
