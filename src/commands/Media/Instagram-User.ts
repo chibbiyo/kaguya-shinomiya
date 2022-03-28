@@ -9,7 +9,7 @@ import axios from 'axios'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'instagramdp',
+            command: 'instauser',
             aliases: ['instadp', 'igdp'],
             description: 'Get the info of a user and Profile pic from Instagram',
             category: 'media',
