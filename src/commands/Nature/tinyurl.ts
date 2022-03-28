@@ -8,7 +8,7 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'shorturl',
-            description: 'Short your given url.',
+            description: 'Short your given url',
             aliases: ['srurl'],
             category: 'nature',
             usage: `${client.config.prefix}shorturl [Your url]`
