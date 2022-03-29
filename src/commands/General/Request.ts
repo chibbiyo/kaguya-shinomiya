@@ -7,11 +7,11 @@ import { IParsedArgs, ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: "report",
-            aliases: ["bug"],
-            description: "send message mods, report, issue, advice",
+            command: "request",
+            aliases: ["request"],
+            description: "send message mods, request, advice, suggestion, features",
             category: "general",
-            usage: `${client.config.prefix}report`,
+            usage: `${client.config.prefix}request`,
             baseXp: 10
         })
     }
@@ -20,7 +20,7 @@ export default class Command extends BaseCommand {
 
 		M: ISimplifiedMessage,	{ joined }: IParsedArgs
 ): Promise<void> => {
-              if (!joined) return void (await M.reply(`Please provide report Message.`))
+              if (!joined) return void (await M.reply(`Please provide request Message.`))
              const user = M.mentioned[0] ? M.mentioned[0] : M.sender.jid
         let username = user === M.sender.jid ? M.sender.username : ''
         if (!username) {
@@ -31,8 +31,8 @@ export default class Command extends BaseCommand {
              const term = joined.trim()
             await this.client.sendMessage(
                // enter your unique gid
-`120363024854462589@g.us`,
-                `${term} by ${user}`,
+`120363024705741799@g.us`,
+                `*Request Message*\n${term} by ${user}`,
                 MessageType.text
             );
             return void M.reply('*Your message has been sent to the bot admin!*')
