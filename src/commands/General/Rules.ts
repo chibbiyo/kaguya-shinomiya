@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
 📍 _Do not spam bot with commands, if bot is not responding then it means either bot is off or there's internet issue at owner's end._\n
 📍 _Do not abuse/disrespect bot and its owner._\n
 📍 _If you see any bug/error in bot then report it to owner with the command ${this.client.config.prefix}bug/report <problem>._\n
-📍 _If you want this bot in your group then use ${this.client.config.prefix}request command with group join link and send your request to admins or contact owner in support group by typing ${this.client.config.prefix}support command._\n\n
+📍 _If you want this bot in your group then use ${this.client.config.prefix}request command with group join link and send your request to admins or contact owner in support group by typing ${this.client.config.prefix}support command._\n
 *_Note: Your group must have 10 members otherwise Bot will not join the group._*\n
 📍 _Enjoy the bot and have fun._\n`
 		);
