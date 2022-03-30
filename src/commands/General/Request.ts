@@ -9,7 +9,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: "request",
             aliases: ["request"],
-            description: "send message mods, request, advice, suggestion, features",
+            description: "send message mods, request, advice, features suggestion",
             category: "general",
             usage: `${client.config.prefix}request`,
             baseXp: 10
@@ -35,5 +35,5 @@ export default class Command extends BaseCommand {
                 `*Request Message*\n${term} by ${user}`,
                 MessageType.text
             );
-            return void M.reply('*Your message has been sent to the bot admin!*')
+            return void M.reply('*Your request message has been sent to the bot admin!*')
         }}
