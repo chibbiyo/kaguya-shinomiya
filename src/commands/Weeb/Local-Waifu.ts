@@ -9,10 +9,10 @@ import { ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "lowaifu",
-			description: "Local Waifu over 1500 images available",
+			command: "waifu2",
+			description: "Local Waifu over 1500 images available in codes",
 			category: "weeb",
-			usage: `${client.config.prefix}lowaifu`,
+			usage: `${client.config.prefix}waifu2`,
 			baseXp: 10,
 		});
 	}
