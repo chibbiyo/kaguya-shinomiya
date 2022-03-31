@@ -1,7 +1,7 @@
 <div align="center">
-<a href="https://coolwallpapers.me/5045071-anime-blonde-blue-eyes-chitoge-kirisaki-nisekoi.html"><img src="https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg" alt="chitoge" border="0"></a>
+<a href="https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg"><img src="https://telegra.ph/file/20d75a844b2e74a49edfc.jpg" alt="chitoge" border="0"></a>
 
-# **✨ Texαs ✨ : A WhatsApp BOT WITH RICH ANIME FEATURES**
+# **Texαs ✨ : A WhatsApp Bot with a lot of anime features!**
 
 [![CodeFactor](https://www.codefactor.io/repository/github/shineiichijo/chitoge/badge)](https://www.codefactor.io/repository/github/shineiichijo/chitoge)
 
@@ -29,18 +29,18 @@
 -   Section Moved to
     [Chitoge-Guides](https://github.com/ShineiIchijo/Chitoge-Guides/blob/main/README.md)
 
-## 🍥 Features of the Repo
+## 👀 Features of the Repo
 
 -   To view all features, click
     here➡️[Chitoge_featuresList.md](https://github.com/ShineiIchijo/Chitoge/blob/main/Features.md)
 
-## 💪 Contribution
+## 🥷 Contribution
 
 -   Feel free to open issues regarding any problems or if you have any feature requests
 -   Make sure to follow the ESLint Rules while editing the code and run
     `yarn run prettier-format` before opening PRs
 
-##  🚀 Our Amazing Contributors
+## 🧑‍💻 Our Amazing Contributors
 
 <a href="https://github.com/ShineiIchijo/Chitoge/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ShineiIchijo/Chitoge" />
@@ -56,6 +56,6 @@
 Distributed under the GNU AFFERO GENERAL PUBLIC License. See [LICENSE](/LICENSE)
 for more information.
 
-## 🎗Help
+## 🤔 Help?
 Please give this repo a ⭐ if it helped you.
  
