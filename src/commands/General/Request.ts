@@ -12,6 +12,7 @@ export default class Command extends BaseCommand {
             description: "send message mods, request, advice, features suggestion",
             category: "general",
             usage: `${client.config.prefix}request`,
+            dm: true,
             baseXp: 10
         })
     }
