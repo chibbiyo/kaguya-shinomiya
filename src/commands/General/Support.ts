@@ -12,6 +12,7 @@ export default class Command extends BaseCommand {
             description: 'Gets the support group links In DM',
             category: 'general',
             usage: `${client.config.prefix}Support`,
+            dm: true,
             baseXp: 10
         })
     }
