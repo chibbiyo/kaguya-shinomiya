@@ -31,12 +31,12 @@ export default class Command extends BaseCommand {
         } catch (err) {
             M.reply(`Profile Picture not Accessible of ${username}`)
             pfp =
-                'https://telegra.ph/file/20d75a844b2e74a49edfc.jpg'
+                'https://telegra.ph/file/10d10b9761bdca617f1bb.jpg'
         }
         await M.reply(
             await request.buffer(
                 pfp ||
-                    'https://telegra.ph/file/20d75a844b2e74a49edfc.jpg'
+                    'https://telegra.ph/file/10d10b9761bdca617f1bb.jpg'
             ),
             MessageType.image,
             undefined,
