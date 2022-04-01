@@ -35,7 +35,7 @@ export default class Command extends BaseCommand {
         } catch (err) {
             M.reply(`Profile Picture not Accessible of ${username}`)
             pfp =
-                'https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg'
+                'https://telegra.ph/file/20d75a844b2e74a49edfc.jpg'
         }
         const exp = (await this.client.getUser(user)).Xp
         let role: string;
@@ -86,7 +86,7 @@ export default class Command extends BaseCommand {
         await M.reply(
             await request.buffer(
                 pfp ||
-                    'https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg'
+                    'https://telegra.ph/file/20d75a844b2e74a49edfc.jpg'
             ),
             MessageType.image,
             undefined,
