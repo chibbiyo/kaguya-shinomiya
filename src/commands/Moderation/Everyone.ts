@@ -29,16 +29,16 @@ export default class Command extends BaseCommand {
       await this.client.groupMetadata(M.from)
     ).participants;
     const stickers = [
-			"https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg",
-                        "https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg",
-			"https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg",
-                        "https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg",
+			"https://telegra.ph/file/20d75a844b2e74a49edfc.jpg",
+                        "https://telegra.ph/file/20d75a844b2e74a49edfc.jpg",
+			"https://telegra.ph/file/20d75a844b2e74a49edfc.jpg",
+                        "https://telegra.ph/file/20d75a844b2e74a49edfc.jpg",
 		];
     const random = stickers[Math.floor(Math.random() * stickers.length)];
     if (flags.includes("--s") || flags.includes("--sticker")) {
       const sticker: any = await new Sticker(random, {
-        pack: "READ QUOTED MESSAGE",
-        author: "✨ Texαs ✨",
+        pack: "Attention Everyone!",
+        author: "Texαs ✨",
         quality: 90,
         type: "default",
         categories: ["🎊"],
