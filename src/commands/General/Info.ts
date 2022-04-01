@@ -39,7 +39,7 @@ export default class Command extends BaseCommand {
 		}
 		this.run = async (M: typings.ISimplifiedMessage): Promise<void> => {
 			const texas =
-				"https://telegra.ph/file/1c0170c930d5ab65bbcad.jpg";
+				"https://telegra.ph/file/20d75a844b2e74a49edfc.jpg";
 			return void this.client.sendMessage(
 				M.from,
 				{ url: texas },
