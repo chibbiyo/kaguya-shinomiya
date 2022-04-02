@@ -42,7 +42,7 @@ export default class Command extends BaseCommand {
             body: `Author : ${videos[0].author.name.substr(
               0,
               20
-            )}\n✨ Texαs ✨`,
+            )}\nTexαs ✨`,
             mediaType: 2,
             thumbnail: await this.client.getBuffer(
               `https://i.ytimg.com/vi/${audio.id}/hqdefault.jpg`
