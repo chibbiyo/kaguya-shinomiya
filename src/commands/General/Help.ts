@@ -43,9 +43,9 @@ export default class Command extends BaseCommand {
 					categories[info.config.category].push(info);
 				}
 			}
-			let text = `*Yes?* \n*What can I do for you*! \nGroup Member! \n*@${
+			let text = `*Yes?* \n*What can I do for you*! \n*Group Member!* \n*@${
 				user.split("@")[0]
-			}*,\n🐇 *Your Exp:* *${(await this.client.getUser(user)).Xp || 0}*\n\n💡 Use my *Prefix:* " *${
+			}*, *Exp:* *${(await this.client.getUser(user)).Xp || 0}*\n\n💡 Use my *Prefix:* " *${
 				this.client.config.prefix
 			}* "\n\n`;
 			const keys = Object.keys(categories);
