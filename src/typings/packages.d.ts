@@ -10,7 +10,6 @@ declare module "mywaifulist-scraper";
 declare module "mal-scraper";
 declare module "wikipedia";
 declare module "anime-wallpaper";
-declare module "anime-quiz";
 declare module "translate-google";
 declare module "animequotes";
 declare module "node-periodic-table";
