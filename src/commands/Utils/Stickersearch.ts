@@ -33,7 +33,7 @@ const b = `${data.results?.[Math.floor(Math.random() * data.results.length)]?.me
 
         const sticker: any = await new Sticker(b, {
 			pack: "sticker",
-			author: "BY ⚡ SHINOMIYA ⚡",
+			author: "BY ♥️ SHINOMIYA ♥️",
 			quality: 90,
 			type: "crop",
 			categories: ["🎊"],
