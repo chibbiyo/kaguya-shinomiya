@@ -45,9 +45,9 @@ export default class Command extends BaseCommand {
             let text = `
 ╭─「┬──┬ ¯\_(ツ)」
 │⋊ 𝕌𝕤𝕖𝕣: *${M.sender.username}*
-│⋊ ℕ𝕒𝕞𝕖: shinomiya
+│⋊ ℕ𝕒𝕞𝕖: Sʜɪɴᴏᴍɪʏᴀ
 │⋊ ℙ𝕣𝕖𝕗𝕚𝕩: ${this.client.config.prefix}
-│⋊ 𝕆𝕨𝕟𝕖𝕣: *${this.client.config.prefix}mod* Ask Mods if you want to add me in your Group
+│⋊ 𝕆𝕨𝕟𝕖𝕣: *${this.client.config.prefix}mod*
 │⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: https://chat.whatsapp.com/G89MF8YbNPt2zOdF6HItyD
 ╰────────────┈平和                            \n\n`
             const keys = Object.keys(categories)
@@ -60,10 +60,10 @@ export default class Command extends BaseCommand {
             return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
             caption: `${text} 
- ──❅┈[ *shinomiya* 𝑩𝒐𝒕 ]┈❅───
+ ──❅┈[ 𝑺𝒉𝒊𝒏𝒐𝒎𝒊𝒚𝒂 𝑩𝒐𝒕 ]┈❅───
 ┌────────────┈❅
 │   🍭kaguya-shinomiya
-│   ©️ Sung Min
+│   ©️ 𝘴𝘢𝘮
 └────────────┈⁂
 ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
  💖*Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
