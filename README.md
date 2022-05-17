@@ -14,6 +14,14 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/Sungmin07/kaguya-shinomiya)
 </div><br/>
 <br/>
+Button : If you are deploying from a fork if you want to deploy Marin Kitagawa-Bot
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+
+</div><br/>
+
+<br/>
 
 ## ✨ Highlights
 
