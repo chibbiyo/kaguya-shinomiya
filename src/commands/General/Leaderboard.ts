@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
     let text = "";
     const users = [];
     if (flags.includes("--group")) {
-      text += "*𝔾𝕣𝕠𝕦𝕡 𝕃𝕖𝕒𝕕𝕖𝕣𝕓𝕠𝕒𝕣𝕕* 👑";
+      text += "*𝐆𝐫𝐨𝐮𝐩 𝐋𝐞𝐚𝐝𝐞𝐫𝐛𝐨𝐚𝐫𝐝* 👑";
       const members = await (
         await this.client.groupMetadata(M.from)
       ).participants;
@@ -34,7 +34,7 @@ export default class Command extends BaseCommand {
         users.push(User);
       }
     } else {
-      text += "*𝔾𝕣𝕠𝕦𝕡 𝕃𝕖𝕒𝕕𝕖𝕣𝕓𝕠𝕒𝕣𝕕* 👑";
+      text += "*𝐆𝐫𝐨𝐮𝐩 𝐋𝐞𝐚𝐝𝐞𝐫𝐛𝐨𝐚𝐫𝐝* 👑";
       const Users = await this.client.DB.user.find();
       for (let i = 0; i < Users.length; i++) {
         const User = await this.client.getUser(Users[i].jid);
